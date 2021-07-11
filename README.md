@@ -16,7 +16,7 @@
 <img src="https://cdn.worldvectorlogo.com/logos/next-js.svg" alt="Spring Logo" width="50" height="50"/>
 <img src="https://cdn.worldvectorlogo.com/logos/firebase-1.svg" alt="Next js Logo" width="50" height="50"/>
 <img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="React Logo" width="50" height="50"/>
-https://cdn.worldvectorlogo.com/logos/mysql-5.svg
+https://cdn.worldvectorlogo.com/logos/mysql-5.svg 
 
 ## &#x1f4c8; My GitHub Stats
 
