@@ -1,4 +1,10 @@
-### Hi there 👋
+### Bienvenido a mi GitHub 👋
+
+### Hi there , I am Juan Condori!
+
+🧰 Toolbox
+
+JavaScript Logo Java Logo Python LogoMysql LogoOracle LogoSQL Server LogoMongoDB LogoPostgres Logo Redis Logo Spring Logo Spring LogoNext js LogoReact Logo
 
 <!--
 **juancondorijara/juancondorijara** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
