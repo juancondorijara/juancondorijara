@@ -7,7 +7,7 @@
 <img src="https://cdn.worldvectorlogo.com/logos/logo-javascript.svg" alt="JavaScript Logo" width="50" height="50"/> 
 <img src="https://cdn.worldvectorlogo.com/logos/java-4.svg" alt="Java Logo" width="50" height="50"/> 
 <img src="https://cdn.worldvectorlogo.com/logos/python-5.svg" alt="Python Logo" width="50" height="50"/>
-<img src="https://cdn.worldvectorlogo.com/logos/mysql-5.svg" alt="Mysql Logo" width="50" height="50"/>
+<img src="https://wiki.cifprodolfoucha.es/images/thumb/8/8e/Mysql_logo.png/100px-Mysql_logo.png" alt="Mysql Logo" width="50" height="50"/>
 <img src="https://cdn.worldvectorlogo.com/logos/oracle-6.svg" alt="Oracle Logo" width="50" height="50"/>
 <img src="https://cdn.worldvectorlogo.com/logos/microsoft-sql-server-2000.svg" alt="SQL Server Logo" width="50" height="50"/>
 <img src="https://cdn.worldvectorlogo.com/logos/mongodb.svg" alt="MongoDB Logo" width="50" height="50"/>
@@ -17,6 +17,7 @@
 <img src="https://cdn.worldvectorlogo.com/logos/next-js.svg" alt="Spring Logo" width="50" height="50"/>
 <img src="https://cdn.worldvectorlogo.com/logos/firebase-1.svg" alt="Next js Logo" width="50" height="50"/>
 <img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="React Logo" width="50" height="50"/>
+https://wiki.cifprodolfoucha.es/images/8/8e/Mysql_logo.png
 
 <!--
 **juancondorijara/juancondorijara** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
