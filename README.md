@@ -3,7 +3,7 @@
 
 🧰 Toolbox
 
-<img src="https://cdn.worldvectorlogo.com/logos/logo-java.svg" alt="Java Logo" width="50" height="50"/> 
+<img src="https://cdn.worldvectorlogo.com/logos/java.svg" alt="Java Logo" width="50" height="50"/> 
 <img src="https://cdn.worldvectorlogo.com/logos/logo-javascript.svg" alt="JavaScript Logo" width="50" height="50"/> 
 <img src="https://cdn.worldvectorlogo.com/logos/python-4.svg" alt="Python Logo" width="50" height="50"/>
 <img src="https://cdn.worldvectorlogo.com/logos/mysql-3.svg" alt="Mysql Logo" width="50" height="50"/>
