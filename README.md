@@ -5,6 +5,7 @@
 
 <img src="https://www.vectorlogo.zone/logos/github/github-tile.svg" alt="GitHub Logo" width="80" height="80"/>
 <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Apache_NetBeans_Logo.svg" alt="Apache NetBeans Logo" width="80" height="80"/>
+<img src="https://dosideas.com/images/stories/java/netbeans.png" alt="NetBeans Logo" width="100" height="80"/>
 <img src="https://fabasoad.github.io/business-card/6d42640530b2868f22c242267d4c98a5.png" alt="NetBeans Logo" width="100" height="80"/>
 <img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Apache_Maven_logo.svg" alt="Apache Maven Logo" width="100" height="80"/>
 
