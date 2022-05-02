@@ -1,5 +1,5 @@
 ## Bienvenido a mi GitHub <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">
-## Hola <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">, Soy Juan Condori 😎
+## Hola <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px"> Soy Juan Condori, un apasionado por la programación. 😎
 
 🧰 Toolbox
 
