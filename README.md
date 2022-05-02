@@ -8,6 +8,8 @@
 <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Apache_NetBeans_Logo.svg" alt="Apache NetBeans Logo" width="80" height="80"/>
 <img src="https://dosideas.com/images/stories/java/netbeans.png" alt="NetBeans Logo" width="80" height="80"/>
 <img src="https://editorconfig.org/logos/maven.png" alt="Apache Maven Logo" width="80" height="80"/>
+<img src="https://cdn.worldvectorlogo.com/logos/visual-studio-code-1.svg" alt="Visual Studio Code Logo" width="80" height="80"/>
+
 <img src="https://cdn.worldvectorlogo.com/logos/java.svg" alt="Java Logo" width="80" height="80"/> 
 <img src="https://cdn.worldvectorlogo.com/logos/python-4.svg" alt="Python Logo" width="80" height="80"/>
 <img src="https://cdn.worldvectorlogo.com/logos/logo-javascript.svg" alt="JavaScript Logo" width="80" height="80"/>
