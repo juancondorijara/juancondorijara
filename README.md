@@ -3,7 +3,8 @@
 
 🧰 Toolbox
 
-<img src="https://cdn.worldvectorlogo.com/logos/netbeans.svg" alt="NetBeans Logo" width="80" height="80"/> 
+<img src="https://cdn.worldvectorlogo.com/logos/netbeans.svg" alt="NetBeans Logo" width="80" height="80"/>
+<img src="https://cdn.worldvectorlogo.com/logos/idea.svg" alt="IntelliJ IDEA Logo" width="80" height="80"/>
 <img src="https://cdn.worldvectorlogo.com/logos/java.svg" alt="Java Logo" width="80" height="80"/> 
 <img src="https://cdn.worldvectorlogo.com/logos/python-4.svg" alt="Python Logo" width="80" height="80"/>
 <img src="https://cdn.worldvectorlogo.com/logos/logo-javascript.svg" alt="JavaScript Logo" width="80" height="80"/>
@@ -11,9 +12,9 @@
 <img src="https://cdn.worldvectorlogo.com/logos/sql-server-magazine.svg" alt="SQL Server Logo" width="80" height="80"/>
 <img src="https://cdn.worldvectorlogo.com/logos/oracle-3.svg" alt="Oracle Logo" width="80" height="80"/>
 <img src="https://cdn.worldvectorlogo.com/logos/postgresql.svg" alt="Postgres Logo" width="80" height="80"/>
-<img src="https://cdn.worldvectorlogo.com/logos/postman.svg" alt="Postman Logo" width="80" height="50"/>
-<img src="https://cdn.worldvectorlogo.com/logos/spring-3.svg" alt="Spring Logo" width="80" height="50"/>
-<img src="https://cdn.worldvectorlogo.com/logos/next-js.svg" alt="Spring Logo" width="80" height="50"/>
+<img src="https://cdn.worldvectorlogo.com/logos/postman.svg" alt="Postman Logo" width="80" height="80"/>
+<img src="https://cdn.worldvectorlogo.com/logos/spring-3.svg" alt="Spring Logo" width="80" height="80"/>
+<img src="https://cdn.worldvectorlogo.com/logos/next-js.svg" alt="Spring Logo" width="80" height="80"/>
 <img src="https://cdn.worldvectorlogo.com/logos/firebase-1.svg" alt="Next js Logo" width="80" height="80"/>
 <img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="React Logo" width="80" height="80"/>
 
