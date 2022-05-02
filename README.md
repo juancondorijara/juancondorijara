@@ -11,6 +11,7 @@
 <img src="https://cdn.worldvectorlogo.com/logos/oracle-6.svg" alt="Oracle Logo" width="80" height="80"/>
 <img src="https://cdn.worldvectorlogo.com/logos/postgresql.svg" alt="Postgres Logo" width="80" height="80"/>
 <img src="https://cdn.worldvectorlogo.com/logos/next-js.svg" alt="Spring Logo" width="80" height="50"/>
+<img src="https://cdn.worldvectorlogo.com/logos/spring-3.svg" alt="Spring Logo" width="80" height="50"/>
 <img src="https://cdn.worldvectorlogo.com/logos/firebase-1.svg" alt="Next js Logo" width="80" height="80"/>
 <img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="React Logo" width="80" height="80"/>
 
