@@ -10,6 +10,8 @@
 <img src="https://editorconfig.org/logos/maven.png" alt="Apache Maven Logo" width="80" height="80"/>
 <img src="https://cdn.worldvectorlogo.com/logos/visual-studio-code-1.svg" alt="Visual Studio Code Logo" width="80" height="80"/>
 <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg" alt="Angular Logo" width="80" height="80"/>
+
+<img src="https://i.pinimg.com/564x/c9/e1/3e/c9e13e45b4541c050a8349214f77b431.jpg" alt="Primefaces Logo" width="80" height="80"/>
 <img src="https://static.javatpoint.com/primefaces/images/primefaces-tutorial.png" alt="Primefaces Logo" width="80" height="80"/>
 <img src="https://cdn.worldvectorlogo.com/logos/java.svg" alt="Java Logo" width="80" height="80"/> 
 <img src="https://cdn.worldvectorlogo.com/logos/python-4.svg" alt="Python Logo" width="80" height="80"/>
