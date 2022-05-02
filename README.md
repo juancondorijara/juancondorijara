@@ -4,6 +4,7 @@
 🧰 Toolbox
 
 <img src="https://cdn.worldvectorlogo.com/logos/github-icon.svg" alt="GitHub Logo" width="80" height="80"/>
+<img src="https://cdn.worldvectorlogo.com/logos/github-2.svg" alt="GitHub Logo" width="80" height="80"/>
 <img src="https://cdn.worldvectorlogo.com/logos/netbeans.svg" alt="NetBeans Logo" width="80" height="80"/>
 <img src="https://cdn.worldvectorlogo.com/logos/idea.svg" alt="IntelliJ IDEA Logo" width="80" height="80"/>
 <img src="https://cdn.worldvectorlogo.com/logos/java.svg" alt="Java Logo" width="80" height="80"/> 
