@@ -6,8 +6,7 @@
 <img src="https://www.vectorlogo.zone/logos/github/github-tile.svg" alt="GitHub Logo" width="80" height="80"/>
 <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Apache_NetBeans_Logo.svg" alt="Apache NetBeans Logo" width="80" height="80"/>
 <img src="https://dosideas.com/images/stories/java/netbeans.png" alt="NetBeans Logo" width="80" height="80"/>
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Apache_Maven_logo.svg" alt="Apache Maven Logo" width="100" height="80"/>
-<img src="https://editorconfig.org/logos/maven.png" alt="Apache Maven Logo" width="100" height="80"/>
+<img src="https://editorconfig.org/logos/maven.png" alt="Apache Maven Logo" width="80" height="80"/>
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/IntelliJ_IDEA_Icon.svg" alt="IntelliJ IDEA Logo" width="80" height="80"/>
 <img src="https://cdn.worldvectorlogo.com/logos/java.svg" alt="Java Logo" width="80" height="80"/> 
