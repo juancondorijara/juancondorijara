@@ -14,7 +14,7 @@
 <img src="https://cdn.worldvectorlogo.com/logos/logo-javascript.svg" alt="JavaScript Logo" width="80" height="80"/>
 <img src="https://cdn.worldvectorlogo.com/logos/mysql-3.svg" alt="Mysql Logo" width="80" height="80"/>
 <img src="https://cdn.worldvectorlogo.com/logos/sql-server-magazine.svg" alt="SQL Server Logo" width="80" height="80"/>
-<img src="https://cdn.worldvectorlogo.com/logos/oracle-3.svg" alt="Oracle Logo" width="80" height="80"/>
+<img src="https://fortecloud.com/wp-content/uploads/2021/02/oracle-img.png" alt="Oracle Logo" width="80" height="80"/>
 <img src="https://cdn.worldvectorlogo.com/logos/postgresql.svg" alt="Postgres Logo" width="80" height="80"/>
 <img src="https://www.svgrepo.com/show/354202/postman-icon.svg" alt="Postman Logo" width="80" height="80"/>
 <img src="https://cdn.worldvectorlogo.com/logos/spring-3.svg" alt="Spring Logo" width="80" height="80"/>
