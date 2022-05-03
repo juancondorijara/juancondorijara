@@ -20,9 +20,11 @@
 </br>
 
 ## Trofeos de Perfil ✔🏆🥇
-<img src="https://github-profile-trophy.vercel.app/?username=juancondorijara&locale=es&layout=compact" alt="juancondorijara"/>
+<img src="https://github-profile-trophy.vercel.app/api/?username=juancondorijara&locale=es" alt="juancondorijara"/>
 
 </br>
+https://github-profile-trophy.vercel.app/?username=juancondorijara&locale=es
+https://github-profile-trophy.vercel.app/api/?username=juancondorijara&locale=es
 
 ## Lenguajes más Usados ☕✨📑
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=juancondorijara&locale=es&layout=compact" alt="juancondorijara" style="width: 500px;"/>
