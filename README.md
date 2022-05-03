@@ -1,6 +1,8 @@
 ## Bienvenido a mi GitHub <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">
 #### Hola <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px"> Soy Juan Condori, un apasionado por la programación. 😎
 
+</br>
+
 ## Biography
 - 🏢 Soy de nacionalidad **Peruana 🇵🇪**
 - ⚙️ Yo uso a diario : `.java` principalmente
@@ -10,8 +12,9 @@
 - 📧 Correo: [juan.condori.jara@vallegrande.edu.pe](mailto:juan.condori.jara@vallegrande.edu.pe)
 - 📫 Linkedin : [www.linkedin.com/in/juan-gabriel-condori-jara-1336931a5/](https://www.linkedin.com/in/juan-gabriel-condori-jara-1336931a5/)
 
-🧰 Toolbox 🧰
+</br>
 
+🧰 Toolbox 🧰
 <img src="https://www.vectorlogo.zone/logos/github/github-tile.svg" alt="GitHub Logo" width="80" height="80"/> <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/IntelliJ_IDEA_Icon.svg" alt="IntelliJ IDEA Logo" width="80" height="80"/> <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Apache_NetBeans_Logo.svg" alt="Apache NetBeans Logo" width="80" height="80"/> <img src="https://dosideas.com/images/stories/java/netbeans.png" alt="NetBeans Logo" width="80" height="80"/> <img src="https://editorconfig.org/logos/maven.png" alt="Apache Maven Logo" width="80" height="80"/> <img src="https://cdn.worldvectorlogo.com/logos/visual-studio-code-1.svg" alt="Visual Studio Code Logo" width="80" height="80"/> <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg" alt="Angular Logo" width="80" height="80"/> <img src="https://i.pinimg.com/564x/c9/e1/3e/c9e13e45b4541c050a8349214f77b431.jpg" alt="Primefaces Logo" width="80" height="80"/> <img src="https://static.javatpoint.com/primefaces/images/primefaces-tutorial.png" alt="Primefaces Logo" width="80" height="80"/> <img src="https://cdn.worldvectorlogo.com/logos/java.svg" alt="Java Logo" width="80" height="80"/> <img src="https://cdn.worldvectorlogo.com/logos/python-4.svg" alt="Python Logo" width="80" height="80"/> <img src="https://cdn.worldvectorlogo.com/logos/logo-javascript.svg" alt="JavaScript Logo" width="80" height="80"/> <img src="https://cdn.worldvectorlogo.com/logos/mysql-3.svg" alt="Mysql Logo" width="80" height="80"/> <img src="https://cdn.worldvectorlogo.com/logos/sql-server-magazine.svg" alt="SQL Server Logo" width="80" height="80"/> <img src="https://www.stickee.co.uk/wp-content/uploads/2016/11/oracle-logo.jpg" alt="Oracle Logo" width="80" height="80"/> <img src="https://cdn.worldvectorlogo.com/logos/postgresql.svg" alt="Postgres Logo" width="80" height="80"/> <img src="https://www.svgrepo.com/show/354202/postman-icon.svg" alt="Postman Logo" width="80" height="80"/> <img src="https://cdn.worldvectorlogo.com/logos/spring-3.svg" alt="Spring Logo" width="80" height="80"/>
 
 </br>
