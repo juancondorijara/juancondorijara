@@ -29,13 +29,17 @@
 
 </br>
 
-[![GitHub stats](https://github-readme-stats.vercel.app/api?username=juancondorijara&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
+## 📈📊 My GitHub Stats 📈📊
+[![GitHub stats](https://github-readme-stats.vercel.app/api?username=juancondorijara&theme=github_dark)](https://github.com/anuraghazra/github-readme-stats)
 
 </br>
 
-
-   
 <img src="https://github-readme-stats.vercel.app/api?username=juancondorijara&show_icons=true&locale=en" alt="juancondorijara" style="width: 500px;"/>
+
+https://github-readme-stats.vercel.app/api?username=juancondorijara&theme=radical)](https://github.com/anuraghazra/github-readme-stats
+https://github-readme-stats.vercel.app/api?username=juancondorijara&show_icons=true&locale=en
+
+https://github-readme-stats.vercel.app/api?username=anuraghazra&theme=dark&show_icons=true
     
 
 
