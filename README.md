@@ -19,16 +19,19 @@
 
 </br>
 
+## ✔🏆🥇 Trofeos de Perfil ✔🏆🥇
 <img src="https://github-profile-trophy.vercel.app/?username=juancondorijara" alt="juancondorijara" />
 
-## 📈📊 Lenguajes más Utilizados 📈📊
+</br>
+
+## 📈📊 Lenguajes más Usados 
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=juancondorijara&locale=es&layout=compact" alt="juancondorijara" style="width: 500px;"/>
 
 </br>
 
-## 📈📊 Mis estadísticas de GitHub 📈📊
+## 📈📊 Mi Estadísticas de GitHub 📈📊
 <img src="https://github-readme-stats.vercel.app/api?username=juancondorijara&show_icons=true&locale=es&theme=default" alt="juancondorijara" style="width: 500px;"/>
-    
+
 
 
 <!--
@@ -61,4 +64,6 @@ Here are some ideas to get you started:
 - 📫 How to reach me: ...
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
+
+https://github.com/anuraghazra/github-readme-stats
 -->
