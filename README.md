@@ -38,10 +38,10 @@
 
 <div>
     <p style="text-align: left;">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs?username=cascencio&show_icons=true&locale=en&layout=compact" alt="cascencio" style="width: 400px;"/>
+        <img src="https://github-readme-stats.vercel.app/api/top-langs?username=juancondorijara&show_icons=true&locale=en&layout=compact" alt="juancondorijara" style="width: 500px;"/>
     </p>
     <p style="text-align: left;">
-        <img src="https://github-readme-stats.vercel.app/api?username=cascencio&show_icons=true&locale=en" alt="cascencio" style="width: 400px;"/>
+        <img src="https://github-readme-stats.vercel.app/api?username=juancondorijara&show_icons=true&locale=en" alt="juancondorijara" style="width: 500px;"/>
     </p>
 </div>
 
