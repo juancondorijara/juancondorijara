@@ -34,7 +34,7 @@
 
 </br>
 
-<img src="https://github-readme-stats.vercel.app/api?username=juancondorijara&show_icons=true&locale=en&theme=dark" alt="juancondorijara" style="width: 500px;"/>
+<img src="https://github-readme-stats.vercel.app/api?username=juancondorijara&show_icons=true&locale=es&theme=dark" alt="juancondorijara" style="width: 500px;"/>
 
 https://github-readme-stats.vercel.app/api?username=juancondorijara&theme=radical)](https://github.com/anuraghazra/github-readme-stats
 https://github-readme-stats.vercel.app/api?username=juancondorijara&show_icons=true&locale=en
