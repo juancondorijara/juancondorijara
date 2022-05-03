@@ -1,5 +1,14 @@
 ## Bienvenido a mi GitHub <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">
-## Hola <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px"> Soy Juan Condori, un apasionado por la programación. 😎
+#### Hola <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px"> Soy Juan Condori, un apasionado por la programación. 😎
+
+##Biography
+- 🏢 Soy de nacionalidad **Peruana 🇵🇪**
+- ⚙️ Yo uso a diario : `.java` principalmente
+- 🌍 Soy principalmente activo dentro de la **comunidad de Java**
+- 🌱 Me gusta aprender todo sobre el **Open Source**
+- 💬 Preguntame sobre **java**
+- 📧 Correo: [juan.condori.jara@vallegrande.edu.pe](mailto:juan.condori.jara@vallegrande.edu.pe)
+- 📫 Linkedin : [www.linkedin.com/in/juan-gabriel-condori-jara-1336931a5/](https://www.linkedin.com/in/juan-gabriel-condori-jara-1336931a5/)
 
 🧰 Toolbox
 
