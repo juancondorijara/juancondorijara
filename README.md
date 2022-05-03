@@ -30,7 +30,7 @@
 </br>
 
 ## 📈📊 My GitHub Stats 📈📊
-[![GitHub stats](https://github-readme-stats.vercel.app/api?username=juancondorijara&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
+[![GitHub stats](https://github-readme-stats.vercel.app/api?username=juancondorijara&show_icons=true&locale=en&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
 
 </br>
 
