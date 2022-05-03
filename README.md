@@ -33,7 +33,7 @@
 </br>
 
 <p align="left"> 
-    <img src="https://github-profile-trophy.vercel.app/?username=cascencio" alt="cascencio" />
+    <img src="https://github-profile-trophy.vercel.app/?username=juancondorijara" alt="juancondorijara" />
 </p>
 
 <div>
@@ -69,9 +69,7 @@
 <img src="https://cdn.worldvectorlogo.com/logos/spring-3.svg" alt="Spring Logo" width="80" height="80"/>
 
 **juancondorijara/juancondorijara** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
 Here are some ideas to get you started:
-
 - 🔭 I’m currently working on ...
 - 🌱 I’m currently learning ...
 - 👯 I’m looking to collaborate on ...
