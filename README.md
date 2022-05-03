@@ -21,29 +21,21 @@
 </br>
 
 ## 📈📊 My GitHub Stats 📈📊
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=juancondorijara&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
+
+<img src="https://github-profile-trophy.vercel.app/?username=juancondorijara" alt="juancondorijara" />
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=juancondorijara&show_icons=true&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 
 </br>
 
 [![GitHub stats](https://github-readme-stats.vercel.app/api?username=juancondorijara&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
 
-
-##### GitHub Streak
-
 </br>
 
-<p align="left"> 
-    <img src="https://github-profile-trophy.vercel.app/?username=juancondorijara" alt="juancondorijara" />
-</p>
-
-<div>
-    <p style="text-align: left;">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs?username=juancondorijara&show_icons=true&locale=en&layout=compact" alt="juancondorijara" style="width: 500px;"/>
-    </p>
-    <p style="text-align: left;">
-        <img src="https://github-readme-stats.vercel.app/api?username=juancondorijara&show_icons=true&locale=en" alt="juancondorijara" style="width: 500px;"/>
-    </p>
-</div>
+<img src="https://github-readme-stats.vercel.app/api/top-langs?username=juancondorijara&show_icons=true&locale=en&layout=compact" alt="juancondorijara" style="width: 500px;"/>
+   
+<img src="https://github-readme-stats.vercel.app/api?username=juancondorijara&show_icons=true&locale=en" alt="juancondorijara" style="width: 500px;"/>
+    
 
 
 
