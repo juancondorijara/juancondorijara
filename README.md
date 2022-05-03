@@ -20,7 +20,7 @@
 </br>
 
 ## Trofeos de Perfil ✔🏆🥇
-<img src="https://github-profile-trophy.vercel.app/?username=juancondorijara" alt="juancondorijara"/>
+<img src="https://github-profile-trophy.vercel.app/?username=juancondorijara&locale=es&layout=compact" alt="juancondorijara"/>
 
 </br>
 
