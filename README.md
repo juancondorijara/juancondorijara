@@ -19,13 +19,10 @@
 
 </br>
 
-## 📈📊 My GitHub Stats 📈📊
-
 <img src="https://github-profile-trophy.vercel.app/?username=juancondorijara" alt="juancondorijara" />
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=juancondorijara&show_icons=true&locale=en&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs?username=juancondorijara&show_icons=true&locale=en&layout=compact" alt="juancondorijara" style="width: 500px;"/>
+## 📈📊 Lenguajes más Utilizados 📈📊
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=juancondorijara&locale=es&layout=compact" alt="juancondorijara" style="width: 500px;"/>
 
 </br>
 
