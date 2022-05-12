@@ -34,7 +34,7 @@ Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación
 
 
 ## 📈📊
-<img src ="https://github-readme-stats.vercel.app/api/pin/ ?username=juancondorijara&repo=Conflomark" alt="" style="width: 500px;"/>
+<img src ="https://github-readme-stats.vercel.app/api/pin/?username=juancondorijara&repo=Conflomark" alt="" style="width: 500px;"/>
 
 
 
