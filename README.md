@@ -38,6 +38,8 @@ Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación
 
 <img src="https://github-readme-stats.vercel.app/api?username=ElserManuel&show_icons=true&locale=es&theme=default" alt="ElserManuel" style="width: 500px;"/>
 
+<img src="https://github-readme-stats.vercel.app/api?username=vallegrande&show_icons=true&locale=es&theme=default" alt="vallegrande" style="width: 500px;"/>
+
 
 
 <!--
