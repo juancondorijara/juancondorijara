@@ -33,12 +33,6 @@ Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación
 <img src="https://github-readme-stats.vercel.app/api?username=juancondorijara&show_icons=true&locale=es&theme=default" alt="juancondorijara" style="width: 500px;"/>
 
 
-## 📈📊
-<img src="https://github-readme-stats.vercel.app/api?username=JhanpoolCupe&show_icons=true&locale=es&theme=default" alt="JhanpoolCupe" style="width: 500px;"/>
-
-<img src="https://github-readme-stats.vercel.app/api?username=ElserManuel&show_icons=true&locale=es&theme=default" alt="ElserManuel" style="width: 500px;"/>
-
-
 
 <!--
 <img src="https://www.vectorlogo.zone/logos/github/github-tile.svg" alt="GitHub Logo" width="80" height="80"/>
