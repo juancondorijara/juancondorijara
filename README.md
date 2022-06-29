@@ -98,33 +98,30 @@ https://github.com/anuraghazra/github-readme-stats
 ## **Crear repositorio en DockerHub**
 
 - Click en el botón Create Repository
+
 ![](imagenes/crear_repositorio.png)
 
-- Colocamos un nombre, descripción, de manera publica y le damos en Create
+- Colocar un nombre, descripción, de manera publica y le damos en Create
+
 ![](imagenes/crear.png)
 
 - Se creará el repositorio
+
 ![](imagenes/creado.png)
 
 ## **Generar token de DockerHub**
 
-- Ingresar a DockerHub
+- Ingresar a Account Settings
 
-![](images/DockerHub-Repository.png)
+![](imagenes/cuenta.png)
 
-- Ir a configuración de la cuenta
+- Ir a la opción de Security y dar click New Access Token
 
-![](images/DockerHub-AccountSettings.png)
+![](images/nuevo_token.png)
 
-- Ir a la pestaña Security
+- Ingresar descripción, definir los permisos del Token y click en Generate
 
-![](images/DockerHub-Security.png)
-
-- Hacer click en __New Access Token__
-
-![](images/DockerHub-NewToken.png)
-
-Ingresar descripción y definir los permisos del Token.
+![](images/generar.png)
 
 ## **Subir una imagen a DockerHub**
 
