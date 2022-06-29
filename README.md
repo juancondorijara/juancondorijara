@@ -77,13 +77,11 @@ https://github.com/anuraghazra/github-readme-stats
 
 - Docker Desktop Windows / Ubuntu 18.04
 
-- Python 3.10
-
 ## **Creando carpeta de proyecto**
 
 - Crear carpeta .github/workflows
 
-- Crear archivo **nombre del archivo**.yml
+- Crear el archivo **push.yml**
 
 - Definiendo la acción:
 
@@ -91,9 +89,9 @@ https://github.com/anuraghazra/github-readme-stats
 
     * Evento de ejecución.
 
-    * Definir sistema operativo.
+    * Definir sistema operativo (ubuntu).
 
-    * Pasos.
+    * Usar los secrets de GitHub
 
 ## **Crear repositorio en Docker Hub**
 
