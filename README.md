@@ -95,6 +95,17 @@ https://github.com/anuraghazra/github-readme-stats
 
     * Pasos.
 
+## **Crear repositorio en DockerHub**
+
+- Click en el botón Create Repository
+![](imagenes/crear_repositorio.png)
+
+- Colocamos un nombre, descripción, de manera publica y le damos en Create
+![](imagenes/crear.png)
+
+- Se creará el repositorio
+![](imagenes/creado.png)
+
 ## **Generar token de DockerHub**
 
 - Ingresar a DockerHub
