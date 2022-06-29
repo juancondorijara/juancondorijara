@@ -95,7 +95,7 @@ https://github.com/anuraghazra/github-readme-stats
 
     * Pasos.
 
-## **Crear repositorio en DockerHub**
+## **Crear repositorio en Docker Hub**
 
 - Click en el botón Create Repository
 
@@ -109,7 +109,7 @@ https://github.com/anuraghazra/github-readme-stats
 
 ![](imagenes/creado.png)
 
-## **Generar token de DockerHub**
+## **Generar token de Docker Hub**
 
 - Ingresar a Account Settings
 
@@ -123,26 +123,24 @@ https://github.com/anuraghazra/github-readme-stats
 
 ![](imagenes/generar.png)
 
-## **Subir una imagen a DockerHub**
+## **Crear los secrets en el repositorio de Github**
 
-- cd path/Dockerfile folder
+- Ir al repositorio en Settings
 
-- docker build -t username/repository:**tagname** .
+![](imagenes/configuracion.png)
 
-- docker push username/repository:**tagname**
+- Ir a la opción de Security / Secrets / Actions
 
-## **Configurando repositorio de Github**
+![](imagenes/secreto.png)
 
-- Ir al repositorio
+- Click en New Repository Secret
 
-- Ir a la pestaña de configuraciones / Settings
+![](imagenes/nuevo_secreto.png)
 
-- Ir al menú Secrets / Actions
-
-- Crear los siguientes __Secrets__:
-
-    - DOCKER_HUB-TOKEN
-
+- Crear los siguientes secrets con los datos de nuestro Docker Hub
+    - DOCKER_HUB_USERNAME
     - DOCKER_HUB_PASSWORD
-
+    - DOCKER_HUB_TOKEN
     - DOCKER_HUB_NAMESPACE
+
+![](imagenes/nuevo_secreto.png)
