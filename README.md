@@ -117,11 +117,11 @@ https://github.com/anuraghazra/github-readme-stats
 
 - Ir a la opción de Security y dar click New Access Token
 
-![](images/nuevo_token.png)
+![](imagenes/nuevo_token.png)
 
 - Ingresar descripción, definir los permisos del Token y click en Generate
 
-![](images/generar.png)
+![](imagenes/generar.png)
 
 ## **Subir una imagen a DockerHub**
 
