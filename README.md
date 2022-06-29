@@ -138,9 +138,10 @@ https://github.com/anuraghazra/github-readme-stats
 ![](imagenes/nuevo_secreto.png)
 
 - Crear los siguientes secrets con los datos de nuestro Docker Hub
+
     - DOCKER_HUB_USERNAME
     - DOCKER_HUB_PASSWORD
     - DOCKER_HUB_TOKEN
     - DOCKER_HUB_NAMESPACE
 
-![](imagenes/nuevo_secreto.png)
+![](imagenes/secretos.png)
