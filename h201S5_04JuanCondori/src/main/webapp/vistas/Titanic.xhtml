@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Titanic</title>
+        <style>
+            html, body{
+                height: 100%;
+                background: black;
+                /*background: url("../resources/images/azureml.jpg");*/
+                background-repeat: no-repeat;
+                background-size: 100em;
+                style: width:50px;height:50px;
+            }
+        </style>
+    </h:head>
+    <h:body >
+        <p:growl showDetail="true" id="msg"/>
+        <center>
+
+            <br/>
+            <br/>
+            <br/>
+            <h1 style="color:white; background-color: #243A73; font-weight: normal; font-size: 50px; font-family: fantasy;">AZURE - MI TITULO</h1>
+            <!--<h1 style="color:black; font-weight:bold; font-size:50px">Regresión Logistica (Binaria) - TITANIC</h1>-->
+            <div style="width: 95%; margin-left: auto; margin-right: auto;" >
+                <h:form id="predicion">
+                    <p:panelGrid columns="3">
+                        <p:outputLabel value="¿CUÁL ES TU ID?"/>
+                        <p:spinner id="ID" value="#{titanicC.titanic.ID}" style="width:270px;"/>
+                        <p:slider for="ID" minValue="0" maxValue="100" step="1" style="width: 220px"/>      
+                    </p:panelGrid>
+
+                    <br/>
+
+                    <p:panelGrid columns="3">
+                        <p:outputLabel value="¿SOBREVIVENCIA SI=1, NO=0?"/>
+                        <p:spinner id="SOBREVIVENCIA" value="#{titanicC.titanic.SOBREVIVENCIA}" style="width:270px;"/>
+                        <p:slider for="SOBREVIVENCIA" minValue="0" maxValue="100" step="1" style="width: 220px"/>      
+                    </p:panelGrid>
+
+                    <br/>
+
+                    <p:panelGrid columns="3">
+                        <p:outputLabel value="¿CLASE PRIMERA=1, SEGUNDA=2, TERCERA=3?"/>
+                        <p:spinner id="CLASE" value="#{titanicC.titanic.CLASE}" style="width:270px;"/>
+                        <p:slider for="CLASE" minValue="0" maxValue="100" step="1" style="width: 220px"/>      
+                    </p:panelGrid>
+
+                    <br/>
+
+                    <p:panelGrid columns="3">
+                        <p:outputLabel value="¿CUÁL ES TU EDAD?"/>
+                        <p:inputText id="EDAD" value="#{titanicC.titanic.EDAD}" style="width:270px;"/>
+                        <p:slider for="EDAD" minValue="0" maxValue="100" step="1" style="width: 220px"/>
+                    </p:panelGrid>
+
+                    <br/>
+
+                    <p:panelGrid columns="2">
+                        <p:outputLabel value="¿CUÁL ES TU NOMBRE?"/>
+                        <p:inputText id="NOMBRE" value="#{titanicC.titanic.NOMBRE}" style="width:270px;"/> 
+                    </p:panelGrid>
+
+                    <br/>
+
+                    <p:panelGrid columns="2">
+                        <p:outputLabel value="¿CUÁL ES TU SEXO"/>
+                        <p:selectOneRadio id="SEXO" value="#{titanicC.titanic.SEXO}">
+                            <f:selectItem itemLabel="Masculino" itemValue="male" />
+                            <f:selectItem itemLabel="Femenino" itemValue="female" />
+                        </p:selectOneRadio>
+                    </p:panelGrid>
+
+                    <br/>
+                    <br/>
+                    <p:commandButton value="VER RESULTADOS" actionListener="#{titanicC.obtenerDatosTitanic()}"
+                                     update=":predicion :msg :dialog" oncomplete="PF('predice').show();">
+                    </p:commandButton>
+                </h:form>
+
+                <p:dialog widgetVar="predice" id="dialog" modal="true" width="600" header="Consumo del Modelo ML con Azure">
+                    <p:panelGrid columns="1">
+                        <h3>Resultados de Predicción</h3>
+                    </p:panelGrid>
+                    
+                    <p:panelGrid columns="1">
+                        <p:outputLabel value="#{titanicC.titanic.RESULTADO}"/>
+                    </p:panelGrid>
+                    
+                    <p:panelGrid columns="1">
+                        <img src="https://todobi.com/content/images/2020/06/Nub8-Machine-Learning-With-Azure-2.jpg" border="0" width="400" height="200"/>
+                    </p:panelGrid>
+                    
+                    <p:panelGrid columns="2">
+                        <p:column>
+                            <p:outputLabel value="Probabilidad de MUERTE = "/>    
+                        </p:column>
+                        <p:column>
+                            <p:outputLabel value="#{titanicC.titanic.SCOREDPROBABILITIES1}"/>
+                        </p:column>
+                    </p:panelGrid>
+                    
+                    <p:panelGrid columns="2">
+                        <p:column>
+                            <p:outputLabel value="Probabilidad de SOBREVIVIR = "/>   
+                        </p:column>
+                        <p:column>
+                            <p:outputLabel value="#{titanicC.titanic.SCOREDPROBABILITIES2}"/>
+                        </p:column>
+                    </p:panelGrid>
+                </p:dialog>
+            </div>
+        </center>
+    </h:body>
+</html>
+
+

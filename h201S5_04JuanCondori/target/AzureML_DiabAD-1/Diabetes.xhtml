@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body >
+        <p:growl showDetail="true" id="msg"/>
+        <center>
+            <h1> Árbol de Decisión tipo Clasificación - Diabetes </h1>
+            <div style="width: 95%; margin-left: auto; margin-right: auto;" >
+                <h:form id="predicion">
+                    <p:panelGrid>
+                        <p:row>
+                            <p:column colspan="2" style="font-weight: bold; color: orangered">
+                                <p:outputLabel value="¿Cuál es tu edad?  (6 - 96)"/>
+                            </p:column>
+                            <!--<p:column rowspan="17" style="font-weight: bold;">  </p:column>-->
+                            <p:column colspan="2" style="font-weight: bold; color: orangered;">
+                                <p:outputLabel value="¿Cuál es tu glucosa? (0 - 248)"/>                
+                            </p:column>
+                        </p:row>
+                        <p:row>
+                            <p:column>
+                                <p:spinner id="age" value="#{diabetesC.diabetes.edad}" min="6" max="96" />
+                            </p:column>                    
+                            <p:column>
+                                <p:slider for="age"  step="1" minValue="6" maxValue="96" style="width: 220px"/>
+                            </p:column>
+                            <p:column>
+                                <p:inputText id="glu" value="#{diabetesC.diabetes.glucosa}" size="38"/>
+                            </p:column> 
+                            <p:column>
+                                <p:slider for="glu" step="1" minValue="0" maxValue="248" style="width: 220px"/>
+                            </p:column>
+                        </p:row>
+                        <!--                    <p:row>
+                                                <p:column colspan="4" styleClass="ui-widget-header" style="background: white">
+                                                    <p:spacer height="0"/>
+                                                </p:column>
+                                            </p:row>-->
+                        <p:row>
+                            <p:column colspan="2" style="font-weight: bold; color: orangered;">
+                                <p:outputLabel value="¿Tu Presión sanguínea? ( 0 - 152 )"/>                        
+                            </p:column>
+                            <p:column colspan="2" style="font-weight: bold; color: orangered;">
+                                <p:outputLabel value="¿Insulina? ( 0 - 1057 )"/>                
+                            </p:column>
+                        </p:row>
+                        <p:row>
+                            <p:column>
+                                <p:inputText id="pres" value="#{diabetesC.diabetes.presion}" size="3"/>
+                            </p:column>
+                            <p:column>
+                                <p:slider for="pres" minValue="0" maxValue="152" step="1" style="width: 220px"/>
+                            </p:column>
+                            <p:column>
+                                <p:inputText id="insulina" value="#{diabetesC.diabetes.insulina}" size="4"/>
+                            </p:column>
+                            <p:column>
+                                <p:slider for="insulina" minValue="0" maxValue="1057" step="1" style="width: 220px"/>
+                            </p:column>  
+                        </p:row>                    
+                        <p:row>
+                            <p:column colspan="2" style="font-weight: bold; color: orangered;">
+                                <p:outputLabel value="¿Cuál es tu índice de Masa Corporal? ( 0.0 - 83.88 )"/>
+                            </p:column>
+
+                            <p:column colspan="2" style="font-weight: bold; color: orangered;">
+                                <p:outputLabel value="¿Pedigrí diabetes? ( 0.0 - 3.0 )"/>
+                            </p:column>
+                        </p:row>
+                        <p:row>
+                            <p:column>
+                                <p:inputText id="imc" value="#{diabetesC.diabetes.imc}" size="8"/>
+                            </p:column>
+                            <p:column>
+                                <p:slider for="imc" minValue="0.0" maxValue="83.88" step="0.001" style="width: 220px"/>
+                            </p:column>
+                            <p:column>
+                                <p:inputText id="pedigri" value="#{diabetesC.diabetes.pedigri}" size="8"/>
+                            </p:column>
+                            <p:column>
+                                <p:slider for="pedigri" minValue="0.0" maxValue="3.0" step="0.001" style="width: 220px"/>
+                            </p:column>
+                        </p:row>                    
+                        <p:row>
+                            <p:column colspan="2" style="font-weight: bold; color: orangered;">
+                                <p:outputLabel value="¿Cantidad de Embarazos? ( 0 - 21)"/>
+                            </p:column>
+                            <p:column  colspan="2" style="font-weight: bold; color: orangered;">
+                                <p:outputLabel value="¿Pliegue cutáneo? ( 0 - 123 )"/>                
+                            </p:column>
+                        </p:row>
+                        <p:row>
+                            <p:column>
+                                <p:spinner id="embar" value="#{diabetesC.diabetes.embarazos}" size="2" min="0" max="21"/>                    
+                            </p:column>
+                            <p:column>
+                                <p:slider for="embar" minValue="0" maxValue="21" step="1" style="width: 220px"/>
+                            </p:column>    
+                            <p:column>
+                                <p:spinner id="pliegue" value="#{diabetesC.diabetes.pliegue}" min="0" max="123"/>                    
+                            </p:column>
+                            <p:column>
+                                <p:slider for="pliegue" minValue="0" maxValue="123" step="1" style="width: 220px"/>
+                            </p:column>  
+                        </p:row> 
+                    </p:panelGrid>
+                    <br/>
+                    <p:commandButton value="Ver Resultados" actionListener="#{diabetesC.obtenerDatos()}"
+                                     update=":predicion :msg :dialog" oncomplete="PF('predice').show();"/>
+                </h:form>
+
+                <p:dialog widgetVar="predice" id="dialog" modal="true" width="600" header="Consumo del Modelo ML con Azure">
+                    <p:panelGrid>
+                        <p:row>
+                            <p:column colspan="3">
+                                <h3>Resultados de predicción</h3>
+                            </p:column>                        
+                        </p:row>                    
+
+                        <p:row>
+                            <p:column colspan="2">
+                                <p:outputLabel value="#{diabetesC.diabetes.result}"/>
+                            </p:column>
+                            <p:column rowspan="2">
+                                <img src="https://todobi.com/content/images/2020/06/Nub8-Machine-Learning-With-Azure-2.jpg" border="0" width="200" height="200"/>
+                            </p:column>
+                        </p:row>
+
+                        <p:row>
+                            <p:column>
+                                <p:outputLabel value="Probabilidad"/>    
+                            </p:column>
+                            <p:column>
+                                <p:outputLabel value="#{diabetesC.diabetes.probability}"/>
+                            </p:column>
+                        </p:row>
+                    </p:panelGrid>
+                </p:dialog>
+            </div>
+        </center>
+    </h:body>
+</html>
+
+
