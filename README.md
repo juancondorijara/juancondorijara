@@ -12,8 +12,8 @@ Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación
 </br>
 
 ## Tecnologías y Herramientas 🧰⚙💼
-<code><img src="https://www.vectorlogo.zone/logos/java/java-horizontal.svg" width="150px" height="75px"></code>
-<code><img src="https://www.vectorlogo.zone/logos/python/python-horizontal.svg" width="150px" height="75px"></code>
+<code><img src="https://www.vectorlogo.zone/logos/java/java-ar21.svg" width="150px" height="75px"></code>
+<code><img src="https://www.vectorlogo.zone/logos/python/python-ar21.svg" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/springio/springio-ar21.svg" width="150px" height="75px"></code>
 <code><img src="" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/jetbrains/jetbrains-ar21.svg" width="150px" height="75px"></code>
