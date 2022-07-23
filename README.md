@@ -54,7 +54,7 @@ Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación
 <code><img src="https://www.vectorlogo.zone/logos/jupyter/jupyter-ar21.svg" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/r-project/r-project-ar21.svg" width="150px" height="75px"></code>
 <code><img src="" width="150px" height="75px"></code>
-<code><img src="https://static.wixstatic.com/media/3d6656_a9bb5cf05dfc4b89ae2f9ba9de5f4ee0.png/v1/fill/w_256,h_256,al_c,q_85,enc_auto/3d6656_a9bb5cf05dfc4b89ae2f9ba9de5f4ee0.png" width="150px" height="75px"></code>
+<code><img src="https://1.bp.blogspot.com/-K-mORa-ZbWM/VxKb7UDL0cI/AAAAAAAACgw/dfS59-cYcqImsKFFBnaxtVl6TSyPW8eRACLcB/s1600/netbeans.png" width="150px" height="75px"></code>
 <code><img src="https://ikastaroak.birt.eus/edu/argitalpen/backupa/20200331/1920k/es/DAM/DI/DI01/es_DAM_DI01_Contenidos/Dp3nCCdXgAEIMxM.png" width="150px" height="75px"></code>
 
 </br>
