@@ -53,11 +53,11 @@ Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación
 <code><img src="https://cdn.worldvectorlogo.com/logos/sonarqube.svg" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/jupyter/jupyter-ar21.svg" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/r-project/r-project-ar21.svg" width="150px" height="75px"></code>
-<code><img src="" width="150px" height="75px"></code>
-<code><img src="" width="150px" height="75px"></code>
+
 <code><img src="https://1.bp.blogspot.com/-K-mORa-ZbWM/VxKb7UDL0cI/AAAAAAAACgw/dfS59-cYcqImsKFFBnaxtVl6TSyPW8eRACLcB/s1600/netbeans.png" width="150px" height="75px"></code>
 <code><img src="https://pbs.twimg.com/media/Dp3nCCdXgAEIMxM.png" width="150px" height="75px"></code>
 <code><img src="" width="150px" height="75px"></code>
+<code><img src="https://www.cursosenvideos.com/wp-content/uploads/2020/11/netbeans-ide-logo-icon.png" width="150px" height="75px"></code>
 
 </br>
 
