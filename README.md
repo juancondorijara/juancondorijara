@@ -1,6 +1,10 @@
 ## Bienvenido a mi GitHub <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px" height="30px">
 Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación**. 😎👨‍💻
 
+<code><img height="43" src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-ar21.svg"></code>
+<code><img height="43" src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-ar21.svg"></code>
+<code><img height="43" src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-ar21.svg"></code>
+
 </br>
 
 ## Biografía 👨‍🎓😎👨‍💻
