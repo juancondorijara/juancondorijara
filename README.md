@@ -89,7 +89,7 @@ Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación
 
 
 
-<!--
+
 <img src="https://www.vectorlogo.zone/logos/github/github-tile.svg" alt="GitHub Logo" width="80" height="80"/>
 <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/IntelliJ_IDEA_Icon.svg" alt="IntelliJ IDEA Logo" width="80" height="80"/>
 <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Apache_NetBeans_Logo.svg" alt="Apache NetBeans Logo" width="80" height="80"/>
@@ -109,6 +109,7 @@ Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación
 <img src="https://www.svgrepo.com/show/354202/postman-icon.svg" alt="Postman Logo" width="80" height="80"/>
 <img src="https://cdn.worldvectorlogo.com/logos/spring-3.svg" alt="Spring Logo" width="80" height="80"/>
 
+<!--
 **juancondorijara/juancondorijara** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 Here are some ideas to get you started:
 - 🔭 I’m currently working on ...
