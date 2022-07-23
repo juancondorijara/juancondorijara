@@ -47,6 +47,8 @@ Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación
 <code><img src="https://www.vectorlogo.zone/logos/docker/docker-ar21.svg" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-ar21.svg" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/microsoft_powerbi/microsoft_powerbi-ar21.svg" width="150px" height="75px"></code>
+<code><img src="https://www.vectorlogo.zone/logos/slack/slack-ar21.svg" width="150px" height="75px"></code>
+<code><img src="https://www.vectorlogo.zone/logos/trello/trello-ar21.svg" width="150px" height="75px"></code>
 
 </br>
 
