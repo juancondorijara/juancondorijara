@@ -60,7 +60,7 @@ Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación
 
 ## Codifico en 🧰⚙💼
 <code><img src="https://www.vectorlogo.zone/logos/jetbrains/jetbrains-ar21.svg" width="150px" height="75px"></code>
-<code><img src="https://victomanolo.files.wordpress.com/2018/01/logo.png" width="150px" height="75px"></code>
+<code><img src="https://pbs.twimg.com/media/Dp3nCCdXgAEIMxM.png" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/visualstudio_code/visualstudio_code-ar21.svg" width="150px" height="75px"></code>
 
 </br>
@@ -91,7 +91,7 @@ Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación
 <a href="https://www.facebook.com/profile.php?id=100004386580197" target="_blank">
 <img src="https://www.vectorlogo.zone/logos/facebook/facebook-icon.svg" width="35px" height="35px">
 </a>
-<a href="" target="_blank">
+<a href="https://martinsam16xyz.vercel.app/" target="_blank">
 <img src="https://www.freepnglogos.com/uploads/logo-website-png/logo-website-website-logo-png-transparent-background-background-15.png" width="35px" height="35px">
 </a>
 
