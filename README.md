@@ -24,6 +24,8 @@ Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación
 
 <code><img src="https://www.vectorlogo.zone/logos/javaee_glassfish/javaee_glassfish-ar21.svg" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/payarafish/payarafish-ar21.svg" width="150px" height="75px"></code>
+<code><img src="https://www.vectorlogo.zone/logos/apache_kafka/apache_kafka-ar21.svg" width="150px" height="75px"></code>
+<code><img src="https://www.vectorlogo.zone/logos/apache_cassandra/apache_cassandra-ar21.svg" width="150px" height="75px"></code>
 
 <code><img src="https://www.vectorlogo.zone/logos/mysql/mysql-ar21.svg" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-ar21.svg" width="150px" height="75px"></code>
