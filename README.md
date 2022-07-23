@@ -19,8 +19,8 @@ Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación
 </br>
 
 ## Codifico en 🧰⚙💼
-<code><img height="43" src="https://www.vectorlogo.zone/logos/jetbrains/jetbrains-ar21.svg"></code>
-<code><img height="43" src="https://www.vectorlogo.zone/logos/visualstudio_code/visualstudio_code-ar21.svg"></code>
+<code><img src="https://www.vectorlogo.zone/logos/jetbrains/jetbrains-ar21.svg" width="150px" height="75px"></code>
+<code><img src="https://www.vectorlogo.zone/logos/visualstudio_code/visualstudio_code-ar21.svg" width="150px" height="75px"></code>
 
 </br>
 
