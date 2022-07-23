@@ -45,7 +45,7 @@ Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación
 <a href="https://www.facebook.com/profile.php?id=100004386580197" target="_blank">
 <img src="https://www.vectorlogo.zone/logos/facebook/facebook-icon.svg" width="35px" height="35px">
 </a>
-<a href="https://martinsam16xyz.vercel.app/" target="_blank">
+<a href="" target="_blank">
 <img src="https://www.freepnglogos.com/uploads/logo-website-png/logo-website-website-logo-png-transparent-background-background-15.png" width="35px" height="35px">
 </a>
 
