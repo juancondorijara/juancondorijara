@@ -29,8 +29,7 @@ Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación
 
 <code><img src="https://www.vectorlogo.zone/logos/mysql/mysql-ar21.svg" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-ar21.svg" width="150px" height="75px"></code>
-<code><img src="https://cdn.worldvectorlogo.com/logos/sql-server-magazine.svg" width="150px" height="75px"></code>
-<code><img src="https://cdn.worldvectorlogo.com/logos/sql-server-magazine.svg" width="150px" height="75px"></code>
+<code><img src=https://www.fiysco.com.mx/img/iconos/MicrosoftSQLServer.png"" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/oracle/oracle-ar21.svg" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-ar21.svg" width="150px" height="75px"></code>
 
