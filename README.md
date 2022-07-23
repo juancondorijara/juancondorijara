@@ -24,23 +24,19 @@ Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación
 <code><img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-ar21.svg" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/javascript/javascript-ar21.svg" width="150px" height="75px"></code>
-
 <code><img src="https://www.vectorlogo.zone/logos/javaee_glassfish/javaee_glassfish-ar21.svg" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/payarafish/payarafish-ar21.svg" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/apache_kafka/apache_kafka-ar21.svg" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/apache_cassandra/apache_cassandra-ar21.svg" width="150px" height="75px"></code>
-
+<code><img src="https://www.vectorlogo.zone/logos/prometheusio/prometheusio-ar21.svg" width="150px" height="75px"></code>
+<code><img src="https://www.vectorlogo.zone/logos/grafana/grafana-ar21.svg" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/mysql/mysql-ar21.svg" width="150px" height="75px"></code>
 <code><img src="https://codeguard.zendesk.com/hc/article_attachments/115005615266/mssql.png" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/oracle/oracle-ar21.svg" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-ar21.svg" width="150px" height="75px"></code>
-
 <code><img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-ar21.svg" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-ar21.svg" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-ar21.svg" width="150px" height="75px"></code>
-<code><img src="https://www.vectorlogo.zone/logos/prometheusio/prometheusio-ar21.svg" width="150px" height="75px"></code>
-<code><img src="https://www.vectorlogo.zone/logos/grafana/grafana-ar21.svg" width="150px" height="75px"></code>
-
 <code><img src="https://www.vectorlogo.zone/logos/linux/linux-ar21.svg" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/ubuntu/ubuntu-ar21.svg" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/debian/debian-ar21.svg" width="150px" height="75px"></code>
