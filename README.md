@@ -1,7 +1,7 @@
 ## Bienvenido a mi GitHub <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px" height="30px">
 Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación**. 😎👨‍💻
 
-<code><img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-ar21.svg" width="130px" height="80px"></code>
+<code><img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-ar21.svg" width="120px" height="60px"></code>
 
 <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-ar21.svg" width="100px" height="50px">
 
@@ -38,7 +38,7 @@ Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación
 
 </br>
 
-## Encuentrame 🔎👨‍💻🔍
+## Encuentrame 🔎📧💬📫🔍
 
 <a href="mailto:juan.condori.jara@vallegrande.edu.pe" target="_blank">
 <img src="https://www.vectorlogo.zone/logos/gmail/gmail-icon.svg" width="35px" height="35px">
