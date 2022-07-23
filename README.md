@@ -36,14 +36,14 @@ Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación
 
 ## Encuentrame 🔎👨‍💻🔍
 
-<a href="https://www.linkedin.com/in/martinsamanarata" target="_blank">
-<img src="https://www.vectorlogo.zone/logos/linkedin/linkedin-icon.svg" width="35px" height="35px">
-</a>
-<a href="mailto:martinsam1610@gmail.com" target="_blank">
+<a href="mailto:juan.condori.jara@vallegrande.edu.pe" target="_blank">
 <img src="https://www.vectorlogo.zone/logos/gmail/gmail-icon.svg" width="35px" height="35px">
 </a>
-<a href="https://www.twitter.com/martinsaman" target="_blank">
-<img src="https://www.vectorlogo.zone/logos/twitter/twitter-tile.svg" width="35px" height="35px">
+<a href="https://www.linkedin.com/in/juan-gabriel-condori-jara-1336931a5/" target="_blank">
+<img src="https://www.vectorlogo.zone/logos/linkedin/linkedin-icon.svg" width="35px" height="35px">
+</a>
+<a href="https://www.facebook.com/profile.php?id=100004386580197" target="_blank">
+<img src="https://www.vectorlogo.zone/logos/facebook/facebook-icon.svg" width="35px" height="35px">
 </a>
 <a href="https://martinsam16xyz.vercel.app/" target="_blank">
 <img src="https://www.freepnglogos.com/uploads/logo-website-png/logo-website-website-logo-png-transparent-background-background-15.png" width="35px" height="35px">
