@@ -96,6 +96,7 @@ Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación
 </a>
 
 <!-- REDES SOCIAIS -->
+<div align="left">
 <a href="https://www.youtube.com/tecnologiaemvideo" target="_blank">
 <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" target="_blank">
 </a>
@@ -105,7 +106,6 @@ Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación
 <a href="https://www.linkedin.com/in/gustavoabreucaetano/" target="_blank">
 <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank">
 </a>
-<div align="center">
   ![](https://visitor-badge.glitch.me/badge?page_id=gus-caetano)
 </div>
 
