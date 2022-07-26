@@ -98,6 +98,9 @@ Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación
 <a href="mailto:juan.condori.jara@vallegrande.edu.pe" target="_blank">
 <img src="https://img.shields.io/badge/-Gmail-red?style=for-the-badge&logo=gmail&logoColor=white" target="_blank">
 </a>
+<a href="https://github.com/juancondorijara" target="_blank">
+<img src="https://img.shields.io/badge/-Gmail-171515?style=for-the-badge&logo=gmail&logoColor=white" target="_blank">
+</a>
 <a href="https://www.linkedin.com/in/juan-gabriel-condori-jara-1336931a5/" target="_blank">
 <img src="https://img.shields.io/badge/-LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank">
 </a>
