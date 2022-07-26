@@ -100,7 +100,7 @@ Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación
 <img src="https://img.shields.io/badge/-Website-informational?style=for-the-badge&logo=google&logoColor=white" target="_blank">
 </a>
 <div>
-![Snake animation](https://github.com/rafaballerini/rafaballerini/blob/output/github-contribution-grid-snake.svg)
+  ![Snake animation](https://github.com/rafaballerini/rafaballerini/blob/output/github-contribution-grid-snake.svg)
 </div> 
 
 
