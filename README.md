@@ -81,20 +81,6 @@ Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación
 </br>
 
 ## Redes Sociales 🔎📧💬📫🔍
-
-<a href="mailto:juan.condori.jara@vallegrande.edu.pe" target="_blank">
-<img src="https://www.vectorlogo.zone/logos/gmail/gmail-icon.svg" width="35px" height="35px">
-</a>
-<a href="https://www.linkedin.com/in/juan-gabriel-condori-jara-1336931a5/" target="_blank">
-<img src="https://www.vectorlogo.zone/logos/linkedin/linkedin-icon.svg" width="35px" height="35px">
-</a>
-<a href="https://www.facebook.com/profile.php?id=100004386580197" target="_blank">
-<img src="https://www.vectorlogo.zone/logos/facebook/facebook-icon.svg" width="35px" height="35px">
-</a>
-<a href="https://juancondorijara.github.io/Mi_Perfil/" target="_blank">
-<img src="https://www.freepnglogos.com/uploads/logo-website-png/logo-website-website-logo-png-transparent-background-background-15.png" width="35px" height="35px">
-</a>
-
 <a href="mailto:juan.condori.jara@vallegrande.edu.pe" target="_blank">
 <img src="https://img.shields.io/badge/-Gmail-red?style=for-the-badge&logo=gmail&logoColor=white" target="_blank">
 </a>
@@ -117,6 +103,21 @@ Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación
 
 
 <!--
+REDES SOCIALES
+<a href="mailto:juan.condori.jara@vallegrande.edu.pe" target="_blank">
+<img src="https://www.vectorlogo.zone/logos/gmail/gmail-icon.svg" width="35px" height="35px">
+</a>
+<a href="https://www.linkedin.com/in/juan-gabriel-condori-jara-1336931a5/" target="_blank">
+<img src="https://www.vectorlogo.zone/logos/linkedin/linkedin-icon.svg" width="35px" height="35px">
+</a>
+<a href="https://www.facebook.com/profile.php?id=100004386580197" target="_blank">
+<img src="https://www.vectorlogo.zone/logos/facebook/facebook-icon.svg" width="35px" height="35px">
+</a>
+<a href="https://juancondorijara.github.io/Mi_Perfil/" target="_blank">
+<img src="https://www.freepnglogos.com/uploads/logo-website-png/logo-website-website-logo-png-transparent-background-background-15.png" width="35px" height="35px">
+</a>
+
+TECNOLOGIAS Y HERRAMIENTAS
 <img src="https://www.vectorlogo.zone/logos/github/github-tile.svg" alt="GitHub Logo" width="80" height="80"/>
 <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/IntelliJ_IDEA_Icon.svg" alt="IntelliJ IDEA Logo" width="80" height="80"/>
 <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Apache_NetBeans_Logo.svg" alt="Apache NetBeans Logo" width="80" height="80"/>
