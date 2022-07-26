@@ -102,7 +102,7 @@ Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación
 <img src="https://img.shields.io/badge/-LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank">
 </a>
 <a href="https://www.facebook.com/profile.php?id=100004386580197" target="_blank">
-<img src="https://img.shields.io/badge/-FaceBook-0000FF?style=for-the-badge&logo=facebook&logoColor=white" target="_blank">
+<img src="https://img.shields.io/badge/-FaceBook-1877F2tyle=for-the-badge&logo=facebook&logoColor=white" target="_blank">
 </a>
 <a href="https://www.youtube.com/channel/UCN1QIeETS1RcB3hWSQ--wWA" target="_blank">
 <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" target="_blank">
