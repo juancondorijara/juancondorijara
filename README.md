@@ -101,7 +101,7 @@ Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación
 </a>
 <div>
   
-![Snake animation](https://github.com/juancondorijara/juancondorijara/blob/main/commit.svg)
+![Snake animation](https://github.com/juancondorijara/juancondorijara/blob/output/github-contribution-grid-snake.svg)
   
 </div>
 
