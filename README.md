@@ -101,9 +101,7 @@ Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación
 <img src="https://img.shields.io/badge/-Website-informational?style=for-the-badge&logo=google&logoColor=white" target="_blank">
 </a>
 <br>
-<br>
-src="https://media.discordapp.net/attachments/639956127056134178/890373478988013628/Publicacoes_Instagram_1_1.png?width=676&height=676">
-<br>
+<img align="right" alt="Rafa-pic" height="150" style="border-radius:50px;" src="https://media.discordapp.net/attachments/639956127056134178/890373478988013628/Publicacoes_Instagram_1_1.png?width=676&height=676">
 <br>
 </div>
 <div>
