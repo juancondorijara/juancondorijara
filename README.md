@@ -81,7 +81,7 @@ Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación
 </br>
 
 ## Redes Sociales 🔎📧💬📫🔍
-<div>
+<div style="display: inline_block"><br>
 <a href="mailto:juan.condori.jara@vallegrande.edu.pe" target="_blank">
 <img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank">
 </a>
