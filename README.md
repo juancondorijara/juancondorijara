@@ -80,7 +80,7 @@ Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación
 
 </br>
 
-## Encuentrame 🔎📧💬📫🔍
+## Redes Sociales 🔎📧💬📫🔍
 
 <a href="mailto:juan.condori.jara@vallegrande.edu.pe" target="_blank">
 <img src="https://www.vectorlogo.zone/logos/gmail/gmail-icon.svg" width="35px" height="35px">
@@ -94,6 +94,15 @@ Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación
 <a href="https://juancondorijara.github.io/Mi_Perfil/" target="_blank">
 <img src="https://www.freepnglogos.com/uploads/logo-website-png/logo-website-website-logo-png-transparent-background-background-15.png" width="35px" height="35px">
 </a>
+
+<!-- REDES SOCIAIS -->
+<div align="center">
+  <a href="https://www.youtube.com/tecnologiaemvideo" target="_blank"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" target="_blank"></a>
+  <a href="https://instagram.com/gustac" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
+  <a href="https://www.linkedin.com/in/gustavoabreucaetano/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>  
+  
+  ![](https://visitor-badge.glitch.me/badge?page_id=gus-caetano)
+</div>
 
 
 
