@@ -71,12 +71,12 @@ Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación
 </br>
 
 ## Lenguajes más Usados ☕✨📑
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=juancondorijara&locale=en&layout=compact" alt="juancondorijara" style="width: 500px;"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=juancondorijara&locale=es&layout=compact&langs_count=10&role=OWNER,COLLABORATOR&theme=default" alt="juancondorijara" style="width: 500px;"/>
 
 </br>
 
 ## Estadísticas de GitHub 📈📊
-<img src="https://github-readme-stats.vercel.app/api?username=juancondorijara&show_icons=true&locale=en&theme=default" alt="juancondorijara" style="width: 500px;"/>
+<img src="https://github-readme-stats.vercel.app/api?username=juancondorijara&show_icons=true&locale=es&role=OWNER,COLLABORATOR&theme=default" alt="juancondorijara" style="width: 500px;"/>
 
 </br>
 
