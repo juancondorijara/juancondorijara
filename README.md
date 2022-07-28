@@ -22,6 +22,11 @@ Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación
 <code><img src="https://upload.vectorlogo.zone/logos/apache_maven/images/bf250be6-ab7f-4191-b421-8d0acb1dc6e4.svg" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/javaee_glassfish/javaee_glassfish-ar21.svg" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/payarafish/payarafish-ar21.svg" width="150px" height="75px"></code>
+<code><img src="https://pbs.twimg.com/media/Dp3nCCdXgAEIMxM.png" width="150px" height="75px"></code>
+<code><img src="https://victomanolo.files.wordpress.com/2018/01/logo.png" width="150px" height="75px"></code>
+<code><img src="https://www.vectorlogo.zone/logos/gitlab/gitlab-ar21.svg" width="150px" height="75px"></code>
+<code><img src="https://www.vectorlogo.zone/logos/jenkins/jenkins-ar21.svg" width="150px" height="75px"></code>
+<code><img src="https://cdn.worldvectorlogo.com/logos/sonarqube.svg" width="150px" height="75px"></code>
 
 <code><img src="https://www.vectorlogo.zone/logos/angular/angular-ar21.svg" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/terraformio/terraformio-ar21.svg" width="150px" height="75px"></code>
@@ -50,11 +55,6 @@ Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación
 <code><img src="https://www.vectorlogo.zone/logos/debian/debian-ar21.svg" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/docker/docker-ar21.svg" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-ar21.svg" width="150px" height="75px"></code>
-<code><img src="https://pbs.twimg.com/media/Dp3nCCdXgAEIMxM.png" width="150px" height="75px"></code>
-<code><img src="https://victomanolo.files.wordpress.com/2018/01/logo.png" width="150px" height="75px"></code>
-<code><img src="https://www.vectorlogo.zone/logos/gitlab/gitlab-ar21.svg" width="150px" height="75px"></code>
-<code><img src="https://www.vectorlogo.zone/logos/jenkins/jenkins-ar21.svg" width="150px" height="75px"></code>
-<code><img src="https://cdn.worldvectorlogo.com/logos/sonarqube.svg" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/jupyter/jupyter-ar21.svg" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/r-project/r-project-ar21.svg" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/microsoft_powerbi/microsoft_powerbi-ar21.svg" width="150px" height="75px"></code>
