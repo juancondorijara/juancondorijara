@@ -25,6 +25,8 @@ Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación
 <code><img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-ar21.svg" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/javascript/javascript-ar21.svg" width="150px" height="75px"></code>
+<code><img src="https://www.vectorlogo.zone/logos/yaml/yaml-ar21.svg" width="150px" height="75px"></code>
+<code><img src="https://www.vectorlogo.zone/logos/json/json-ar21.svg" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/javaee_glassfish/javaee_glassfish-ar21.svg" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/payarafish/payarafish-ar21.svg" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/apache_kafka/apache_kafka-ar21.svg" width="150px" height="75px"></code>
@@ -56,8 +58,6 @@ Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación
 <code><img src="https://www.vectorlogo.zone/logos/r-project/r-project-ar21.svg" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/microsoft_powerbi/microsoft_powerbi-ar21.svg" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/tibco/tibco-ar21.svg" width="150px" height="75px"></code>
-<code><img src="https://www.vectorlogo.zone/logos/yaml/yaml-ar21.svg" width="150px" height="75px"></code>
-<code><img src="https://www.vectorlogo.zone/logos/json/json-ar21.svg" width="150px" height="75px"></code>
 
 </br>
 
