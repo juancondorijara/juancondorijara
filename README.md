@@ -32,11 +32,11 @@ Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación
 <code><img src="https://www.vectorlogo.zone/logos/javascript/javascript-ar21.svg" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/yaml/yaml-ar21.svg" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/json/json-ar21.svg" width="150px" height="75px"></code>
-<code><img src="https://www.vectorlogo.zone/logos/apache_kafka/apache_kafka-ar21.svg" width="150px" height="75px"></code>
-<code><img src="https://www.vectorlogo.zone/logos/apache_cassandra/apache_cassandra-ar21.svg" width="150px" height="75px"></code>
+<code><img src="https://www.vectorlogo.zone/logos/elastic/elastic-ar21.svg" width="150px" height="75px"></code>
+<code><img src="https://www.vectorlogo.zone/logos/elasticco_logstash/elasticco_logstash-ar21.svg" width="150px" height="75px"></code>
+<code><img src="https://www.vectorlogo.zone/logos/elasticco_kibana/elasticco_kibana-ar21.svg" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/prometheusio/prometheusio-ar21.svg" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/grafana/grafana-ar21.svg" width="150px" height="75px"></code>
-<code><img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-ar21.svg" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/mysql/mysql-ar21.svg" width="150px" height="75px"></code>
 <code><img src="https://codeguard.zendesk.com/hc/article_attachments/115005615266/mssql.png" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/oracle/oracle-ar21.svg" width="150px" height="75px"></code>
@@ -58,7 +58,9 @@ Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación
 <code><img src="https://www.vectorlogo.zone/logos/r-project/r-project-ar21.svg" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/tibco/tibco-ar21.svg" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/microsoft_powerbi/microsoft_powerbi-ar21.svg" width="150px" height="75px"></code>
-
+<code><img src="https://www.vectorlogo.zone/logos/apache_kafka/apache_kafka-ar21.svg" width="150px" height="75px"></code>
+<code><img src="https://www.vectorlogo.zone/logos/apache_cassandra/apache_cassandra-ar21.svg" width="150px" height="75px"></code>
+<code><img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-ar21.svg" width="150px" height="75px"></code>
 </br>
 
 ## Codifico en 🧰⚙💼
