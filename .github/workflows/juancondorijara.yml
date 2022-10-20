@@ -1,4 +1,6 @@
 # GitHub Action for generating a contribution graph with a snake eating your contributions
+# https://www.youtube.com/watch?v=MZT37vCQ-4Y&t=163s
+# https://dev.to/mishmanners/how-to-enable-github-actions-on-your-profile-readme-for-a-contribution-graph-4l66
 name: Generate Snake
 
 on:
