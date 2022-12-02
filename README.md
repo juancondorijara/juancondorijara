@@ -64,7 +64,7 @@ Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación
 <code><img src="https://vectorwiki.com/images/NRanD__sonarcloud-wordmark.svg" width="150px" height="75px"></code>
 </br>
 
-## Codifico en 🧰⚙💼
+## Programo en 🧰⚙💼
 <code><img src="https://www.vectorlogo.zone/logos/jetbrains/jetbrains-ar21.svg" width="150px" height="75px"></code>
 <code><img src="https://pbs.twimg.com/media/Dp3nCCdXgAEIMxM.png" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/visualstudio_code/visualstudio_code-ar21.svg" width="150px" height="75px"></code>
