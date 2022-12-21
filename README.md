@@ -1,7 +1,7 @@
 ## Bienvenido a mi GitHub <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px" height="30px">
 Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación**. 😎👨‍💻
 
-<
+</br>
 
 ## Biografía 👨‍🎓😎👨‍💻
 - 🏢 Soy de **Perú**
