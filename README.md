@@ -113,8 +113,6 @@ Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación
   
 </div>
 
-</br>
-
 ## Total de Visitas en el Perfil 🔍👨‍💻✔
 <img src="https://profile-counter.glitch.me/juancondorijara/count.svg"/>
 
