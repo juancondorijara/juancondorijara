@@ -1,5 +1,4 @@
 ## Bienvenido a mi GitHub <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px" height="30px">
-Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación**. 😎👨‍💻
 
 <div align="center">
  
@@ -12,6 +11,8 @@ Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación
      \/  \/ \___|_|\___\___/|_| |_| |_|\___(_)
 ```
 </div>
+
+Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación**. 😎👨‍💻
 
 </br>
 
