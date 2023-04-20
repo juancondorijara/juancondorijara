@@ -22,7 +22,7 @@ Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación
 - 🌍 Soy principalmente activo dentro de la **comunidad de Java**
 - 🌱 Me gusta aprender todo sobre el **Open Source**
 
-</br>
+</r>
 
 ## Tecnologías y Herramientas 🧰⚙💼
 <code><img src="https://www.vectorlogo.zone/logos/java/java-ar21.svg" width="150px" height="75px"></code>
