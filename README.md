@@ -14,7 +14,7 @@ U## Bienvenido a mi GitHub <img src="https://raw.githubusercontent.com/MartinHei
 
 Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación**. 😎👨‍💻
 
-</br>
+
 
 ## Biografía 👨‍🎓😎👨‍💻
 - 🏢 Soy de **Perú**
