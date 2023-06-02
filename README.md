@@ -14,7 +14,7 @@
 
 Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación**. 😎👨‍💻
 
-</r>
+</br>
 
 ## Biografía 👨‍🎓😎👨‍💻
 - 🏢 Soy de **Perú**
