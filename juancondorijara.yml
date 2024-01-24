@@ -2,6 +2,16 @@
 # https://www.youtube.com/watch?v=MZT37vCQ-4Y&t=163s
 # https://dev.to/mishmanners/how-to-enable-github-actions-on-your-profile-readme-for-a-contribution-graph-4l66
 # .github/workflows/juancondorijara.yml
+   
+#on:
+#  push:
+#    branches:
+#      - 'develop'
+#      - 'feature/*'
+#  pull_request:
+#    branches:
+#      - 'develop'
+#    types: [opened, synchronize, reopened]
 
 name: Generate Snake
 
@@ -27,4 +37,5 @@ jobs:
           target_branch: output
           build_dir: dist
         env:
-          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          #GITHUB_TOKEN: ${{ github.token }}
