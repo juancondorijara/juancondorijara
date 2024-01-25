@@ -79,7 +79,6 @@ Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación
 
 ## Programo en 🧰⚙💼
 <code><img src="https://www.vectorlogo.zone/logos/jetbrains/jetbrains-ar21.svg" width="150px" height="75px"></code>
-<code><img src="https://pbs.twimg.com/media/Dp3nCCdXgAEIMxM.png" width="150px" height="75px"></code>
 <code><img src="https://www.vectorlogo.zone/logos/visualstudio_code/visualstudio_code-ar21.svg" width="150px" height="75px"></code>
 
 </br>
@@ -121,8 +120,6 @@ Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación
 <img src="https://img.shields.io/badge/-Website-informational?style=for-the-badge&logo=google&logoColor=white" target="_blank">
 </a>
 <div>
-  
-![Snake animation](https://github.com/juancondorijara/juancondorijara/blob/output/github-contribution-grid-snake.svg)
 
 ![Snake animation](https://github.com/juancondorijara/juancondorijara/blob/output/github-contribution-grid-snake-dark.svg)
 
