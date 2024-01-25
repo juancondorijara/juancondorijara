@@ -124,6 +124,8 @@ Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación
   
 ![Snake animation](https://github.com/juancondorijara/juancondorijara/blob/output/github-contribution-grid-snake.svg)
 
+![Snake animation](https://github.com/juancondorijara/juancondorijara/blob/output/github-contribution-grid-snake-dark.svg)
+
 </div>
 
 ## Total de Visitas en el Perfil 🔍👨‍💻✔
