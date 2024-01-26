@@ -6,15 +6,19 @@ on:
       - feature/test1
 
 jobs:
-  merge-to-main:
+  merge:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2
 
-      - name: Merge to develop
-        run: |          
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Create Pull Request
+        run: |
+          git config --global user.name "juancondorijara"
+          git config --global user.email "juan.condori.jara@vallegrande.edu.pe"
           git checkout develop
-          git merge --no-ff feature/test1 -m "Merge branch 'feature/test1' into develop"
-          git push origin develop
+          git merge feature/test1
+          git push origin feature/test1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
