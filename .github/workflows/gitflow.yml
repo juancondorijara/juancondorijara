@@ -19,11 +19,6 @@ jobs:
           
       - name: Merge to develop
         run: |
-          git checkout feature/test1
-          git checkout develop
-          git merge feature/test1
-          git add .
-          git commit -m "merge"
-          git push origin develop
+          git flow feature finish test1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
