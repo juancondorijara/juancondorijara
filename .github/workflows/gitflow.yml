@@ -29,19 +29,19 @@ jobs:
           author: ${{ secrets.USERNAME_GITHUB }} <${{ secrets.EMAIL_GITHUB }}">
           body:
             Creación Automática de Pull Requests
-          github-token: ${{ secrets.github_token }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           delete-branch: false
 
       - name: Approve Pull Request
         uses: juliangruber/approve-pull-request-action@v1
         with:
-          github-token: ${{ secrets.github_token }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           number: ${{ steps.mydemo.outputs.pull-request-number }}
 
       - name: Merge Pull Request
         uses: juliangruber/merge-pull-request-action@v1
         with:
-          github-token: ${{ secrets.github_token }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           number: ${{ steps.mydemo.outputs.pull-request-number }}
           method: merge
           
