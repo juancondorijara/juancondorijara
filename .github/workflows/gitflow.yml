@@ -10,13 +10,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
 
-      - name: Merge by labeled
-        uses: devmasx/merge-branch@master
-        with:
-          label_name: 'merged in develop'
-          message: Merge staging into develop
-          target_branch: develop
+      - name: Set up Git
+        run: |
+          git config user.name "juancondorijara"
+          git config user.email "juan.condori.jara@vallegrande.edu.pe"
+          
+      - name: Merge to develop
+        run: |
+          git checkout develop
+          git merge feature/test1
+          git add .
+          git commit -m "merge"
+          git push -u origin develop
+        env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
