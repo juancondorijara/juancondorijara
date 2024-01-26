@@ -16,5 +16,7 @@ jobs:
         uses: devmasx/merge-branch@master
         with:
           label_name: 'merged in develop'
+          message: Merge staging into develop
           target_branch: develop
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
