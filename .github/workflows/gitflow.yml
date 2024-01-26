@@ -29,7 +29,7 @@ jobs:
           author: ${{ secrets.USERNAME_GITHUB }} <${{ secrets.EMAIL_GITHUB }}">
           body:
             Creación Automática de Pull Requests
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           delete-branch: false
 
       - name: Approve Pull Request
@@ -41,7 +41,7 @@ jobs:
       - name: Merge Pull Request
         uses: juliangruber/merge-pull-request-action@v1
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           number: ${{ steps.mydemo.outputs.pull-request-number }}
           method: merge
           
