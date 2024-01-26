@@ -1,0 +1,21 @@
+name: Git Flow Workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  merge-to-main:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Merge to develop
+        run: |
+          git config user.email "${{ secrets.EMAIL_GITHUB }}"
+          git config user.name "${{ secrets.USERNAME_GITHUB }}"
+          
+          git checkout develop
+          git merge --no-ff feature/test1 -m "Merge branch 'feature/test1' into develop"
+          git push origin develop
