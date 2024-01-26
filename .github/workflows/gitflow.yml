@@ -6,19 +6,36 @@ on:
       - feature/test1
 
 jobs:
-  merge-branch:
+  updateAuthor:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2
+      - name: Chekout Repository
+        uses: actions/checkout@v3
 
-      - name: Set up Git
-        run: |
-          git config user.name "juancondorijara"
-          git config user.email "juan.condori.jara@vallegrande.edu.pe"
-          
-      - name: Merge to develop
-        run: |
-          git flow feature finish test1
-        env:
+      - name: Extraer Datos de Confirmación de Git
+        uses: rlespinasse/git-commit-data-action@v1.x
+
+      - name: Actualizar la Información del Autor
+        run: echo ${{ env.GIT_COMMIT_AUTHOR_NAME }} > AUTHOR_RUN
+
+      - name: Create Pull Requests
+        id: mydemo
+        uses: peter-evans/create-pull-request@v3
+        with:
+          branch: develop
+          base: feature/test1
+          title: "Auto Pull Requests"
+          committer: ${{ env.GIT_COMMIT_AUTHOR_NAME }} <${{ env.GIT_COMMIT_AUTHOR_EMAIL }}">
+          author: ${{ env.GIT_COMMIT_AUTHOR_NAME }} <${{ env.GIT_COMMIT_AUTHOR_EMAIL }}">
+          body:
+            Creación Automática de Pull Requests
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          delete-branch: false
+
+      - name: Merge Pull Request
+        uses: juliangruber/merge-pull-request-action@v1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          number: ${{ steps.mydemo.outputs.pull-request-number }}
+          method: merge
+          
