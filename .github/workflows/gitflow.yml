@@ -1,7 +1,9 @@
 name: Git Flow Workflow
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - feature/test1
 
 jobs:
   merge-to-main:
