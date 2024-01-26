@@ -16,14 +16,14 @@ jobs:
         run: |
           git config user.name "juancondorijara"
           git config user.email "juan.condori.jara@vallegrande.edu.pe"
-          git fetch origin
           
       - name: Merge to develop
         run: |
+          git checkout feature/test1
           git checkout develop
           git merge feature/test1
           git add .
           git commit -m "merge"
-          git push -u origin develop
+          git push origin develop
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
