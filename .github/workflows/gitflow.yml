@@ -15,8 +15,8 @@ jobs:
 
       - name: Merge to develop
         run: |
-          git config user.email "${{ secrets.EMAIL_GITHUB }}"
-          git config user.name "${{ secrets.USERNAME_GITHUB }}"
+          git config user.email "juan.condori.jara@vallegrande.edu.pe"
+          git config user.name "juancondorijara"
           
           git checkout develop
           git merge --no-ff feature/test1 -m "Merge branch 'feature/test1' into develop"
