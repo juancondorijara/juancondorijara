@@ -3,7 +3,7 @@ name: Auto Pull Request
 on:
   push:
     branches:
-      - feature/test
+      - feature/test1
 
 jobs:
   updateAuthor:
