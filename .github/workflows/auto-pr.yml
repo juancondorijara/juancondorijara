@@ -4,7 +4,7 @@ name: Auto Pull Request
 on:
   push:
     branches:
-      - feature/test1
+      - feature/test
 
 jobs:
   updateAuthor:
@@ -36,8 +36,6 @@ jobs:
       - name: Approve Pull Request1
         uses: juliangruber/approve-pull-request-action@v1
         with:
-          committer: ${{ env.GIT_COMMIT_AUTHOR_NAME }} <${{ env.GIT_COMMIT_AUTHOR_EMAIL }}">
-          author: ${{ env.GIT_COMMIT_AUTHOR_NAME }} <${{ env.GIT_COMMIT_AUTHOR_EMAIL }}">
           github-token: ${{ secrets.TOKEN_GITHUB_APPROVER }}
           number: ${{ steps.demo.outputs.pull-request-number }}
 
