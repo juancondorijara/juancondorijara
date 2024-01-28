@@ -1,46 +1,43 @@
-name: Auto Pull Request
+name: PR + GitHub Actions
 
 on:
   push:
     branches:
-      - feature/test
+      - feature/test1
 
 jobs:
   updateAuthor:
     runs-on: ubuntu-latest
     steps:
-      - name: checking out code
-        uses: actions/checkout@v2
+      - name: Checkout Repository
+        uses: actions/checkout@v3
 
-      - name: extract git commit data
+      - name: Extract Git Commit Data
         uses: rlespinasse/git-commit-data-action@v1.x
 
-      - name: Update author information
-        run: echo ${{ env.GIT_COMMIT_AUTHOR_NAME }} > juangabrielcondorijara
-
-      - name: Raise PR 1
-        id: demo-111
+      - name: Create Pull Request
+        id: autopr
         uses: peter-evans/create-pull-request@v3
         with:
           branch: develop
           base: feature/test1
-          title: "demo for auto pr1"
+          title: "Pull Request With GitHub Actions"
           committer: ${{ env.GIT_COMMIT_AUTHOR_NAME }} <${{ env.GIT_COMMIT_AUTHOR_EMAIL }}">
           author: ${{ env.GIT_COMMIT_AUTHOR_NAME }} <${{ env.GIT_COMMIT_AUTHOR_EMAIL }}">
           body:
-            This is to show automatic PR creation
-          token: ${{ secrets.GITHUB_TOKEN }}
+            Automatic Creation Of Pull Request
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           delete-branch: false
 
-      - name: Approve Pull Request1
+      - name: Approve Pull Request
         uses: juliangruber/approve-pull-request-action@v1
         with:
-          github-token: ${{ secrets.TOKEN_GITHUB_APPROVER }}
-          number: ${{ steps.demo-111.outputs.pull-request-number }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          number: ${{ steps.autopr.outputs.pull-request-number }}
 
-      - name: Merge Pull request1
+      - name: Merge Pull Request
         uses: juliangruber/merge-pull-request-action@v1
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          number: ${{ steps.demo-111.outputs.pull-request-number }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          number: ${{ steps.autopr.outputs.pull-request-number }}
           method: merge
