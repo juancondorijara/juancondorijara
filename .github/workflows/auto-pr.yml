@@ -15,6 +15,9 @@ jobs:
       - name: Extract Git Commit Data
         uses: rlespinasse/git-commit-data-action@v1.x
 
+      - name: Update author information
+        run: ${{ env.GIT_COMMIT_AUTHOR_NAME }}
+
       - name: Create Pull Request
         id: autopr
         uses: peter-evans/create-pull-request@v3
