@@ -23,7 +23,7 @@ jobs:
         id: demo
         uses: peter-evans/create-pull-request@v3
         with:
-          branch: develop
+          branch: "develop"
           base: feature/test1
           title: "demo for auto pr1"
           committer: ${{ env.GIT_COMMIT_AUTHOR_NAME }} <${{ env.GIT_COMMIT_AUTHOR_EMAIL }}">
