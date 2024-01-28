@@ -16,7 +16,7 @@ jobs:
         uses: rlespinasse/git-commit-data-action@v1.x
 
       - name: Raise PR 1
-        id: demo-11
+        id: demo-111
         uses: peter-evans/create-pull-request@v3
         with:
           branch: develop
@@ -33,11 +33,11 @@ jobs:
         uses: juliangruber/approve-pull-request-action@v1
         with:
           github-token: ${{ secrets.TOKEN_GITHUB_APPROVER }}
-          number: ${{ steps.demo-11.outputs.pull-request-number }}
+          number: ${{ steps.demo-111.outputs.pull-request-number }}
 
       - name: Merge Pull request1
         uses: juliangruber/merge-pull-request-action@v1
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          number: ${{ steps.demo-11.outputs.pull-request-number }}
+          number: ${{ steps.demo-111.outputs.pull-request-number }}
           method: merge
