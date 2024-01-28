@@ -3,7 +3,7 @@ name: Auto Pull Request
 on:
   push:
     branches:
-      - feature/test1
+      - feature/test
 
 jobs:
   updateAuthor:
@@ -14,9 +14,6 @@ jobs:
 
       - name: extract git commit data
         uses: rlespinasse/git-commit-data-action@v1.x
-
-      - name: Update author information
-        run: echo ${{ env.GIT_COMMIT_AUTHOR_NAME }} > AUTHOR
 
       - name: Raise PR 1
         id: demo-11
