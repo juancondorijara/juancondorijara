@@ -3,10 +3,10 @@ name: PR + GitHub Actions
 on:
   push:
     branches:
-      - feature/test1
+      - feature/test
 
 jobs:
-  updateAuthor:
+  pullRequest:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -14,9 +14,6 @@ jobs:
 
       - name: Extract Git Commit Data
         uses: rlespinasse/git-commit-data-action@v1.x
-
-      - name: Update author information
-        run: echo ${{ env.GIT_COMMIT_AUTHOR_NAME }} , ${{ env.GIT_COMMIT_AUTHOR_EMAIL }} > AUTHOR
 
       - name: Create Pull Request
         id: autopr
@@ -31,7 +28,7 @@ jobs:
             Automatic Creation Of Pull Request
           github-token: ${{ secrets.GITHUB_TOKEN }}
           delete-branch: false
-      #- run: echo ${{ steps.autopr.outputs.pull-request-number }}
+      - run: echo ${{ steps.autopr.outputs.pull-request-number }}
 
       - name: Approve Pull Request
         uses: juliangruber/approve-pull-request-action@v1
