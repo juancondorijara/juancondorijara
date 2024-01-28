@@ -36,12 +36,12 @@ jobs:
         uses: juliangruber/approve-pull-request-action@v1
         with:
           github-token: ${{ secrets.TOKEN_GITHUB_APPROVE }}
-          number: ${{ steps.mydemo.outputs.pull-request-number }}
+          #number: ${{ steps.mydemo.outputs.pull-request-number }}
 
       - name: Merge Pull Request
         uses: juliangruber/merge-pull-request-action@v1
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          number: ${{ steps.mydemo.outputs.pull-request-number }}
+          #number: ${{ steps.mydemo.outputs.pull-request-number }}
           method: merge
           
