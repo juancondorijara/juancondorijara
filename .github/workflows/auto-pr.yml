@@ -1,9 +1,9 @@
-name: Auto PR
+name: Auto Pull Request
 
 on:
   push:
     branches:
-      - feature/test1
+      - feature/test
 
 jobs:
   updateAuthor:
@@ -32,7 +32,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           delete-branch: false
 
-      - name: Approve Pull Request1
+      - name: Approve Pull Request
         uses: juliangruber/approve-pull-request-action@v1
         with:
           github-token: ${{ secrets.APPROVER_DEMO }}
