@@ -4,7 +4,7 @@ name: Auto Pull Request
 on:
   push:
     branches:
-      - feature/test1
+      - feature/test
 
 jobs:
   updateAuthor:
@@ -23,7 +23,7 @@ jobs:
         id: demo
         uses: peter-evans/create-pull-request@v3
         with:
-          branch: "develop"
+          branch: develop
           base: feature/test1
           title: "demo for auto pr1"
           committer: ${{ env.GIT_COMMIT_AUTHOR_NAME }} <${{ env.GIT_COMMIT_AUTHOR_EMAIL }}">
@@ -36,6 +36,8 @@ jobs:
       - name: Approve Pull Request1
         uses: juliangruber/approve-pull-request-action@v1
         with:
+          committer: ${{ env.GIT_COMMIT_COMMITTER_NAME }} <${{ env.GIT_COMMIT_COMMITTER_NAME }}">
+          author: ${{ env.GIT_COMMIT_COMMITTER_EMAIL }} <${{ env.GIT_COMMIT_COMMITTER_EMAIL }}">
           github-token: ${{ secrets.TOKEN_GITHUB_APPROVER }}
           number: ${{ steps.demo.outputs.pull-request-number }}
 
