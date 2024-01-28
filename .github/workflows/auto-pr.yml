@@ -20,7 +20,7 @@ jobs:
         run: echo ${{ env.GIT_COMMIT_AUTHOR_NAME }} > AUTHOR
 
       - name: Raise PR 1
-        id: demo-1
+        id: demo
         uses: peter-evans/create-pull-request@v3
         with:
           branch: develop
@@ -37,11 +37,11 @@ jobs:
         uses: juliangruber/approve-pull-request-action@v1
         with:
           github-token: ${{ secrets.TOKEN_GITHUB_APPROVER }}
-          number: ${{ steps.demo-1.outputs.pull-request-number }}
+          number: ${{ steps.demo.outputs.pull-request-number }}
 
       - name: Merge Pull request1
         uses: juliangruber/merge-pull-request-action@v1
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          number: ${{ steps.demo-1.outputs.pull-request-number }}
+          number: ${{ steps.demo.outputs.pull-request-number }}
           method: merge
