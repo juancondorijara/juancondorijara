@@ -1,10 +1,9 @@
-# .github/workflows/auto-pr.yml
 name: Auto Pull Request
 
 on:
   push:
     branches:
-      - feature/test
+      - feature/test1
 
 jobs:
   updateAuthor:
@@ -20,7 +19,7 @@ jobs:
         run: echo ${{ env.GIT_COMMIT_AUTHOR_NAME }} > AUTHOR
 
       - name: Raise PR 1
-        id: demo
+        id: demo-1
         uses: peter-evans/create-pull-request@v3
         with:
           branch: develop
@@ -31,17 +30,17 @@ jobs:
           body:
             This is to show automatic PR creation
           token: ${{ secrets.GITHUB_TOKEN }}
-          delete-branch: false
+          delete-branch: true
 
       - name: Approve Pull Request1
         uses: juliangruber/approve-pull-request-action@v1
         with:
           github-token: ${{ secrets.TOKEN_GITHUB_APPROVER }}
-          number: ${{ steps.demo.outputs.pull-request-number }}
+          number: ${{ steps.demo-1.outputs.pull-request-number }}
 
       - name: Merge Pull request1
         uses: juliangruber/merge-pull-request-action@v1
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          number: ${{ steps.demo.outputs.pull-request-number }}
+          number: ${{ steps.demo-1.outputs.pull-request-number }}
           method: merge
