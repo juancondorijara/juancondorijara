@@ -16,7 +16,7 @@ jobs:
         uses: rlespinasse/git-commit-data-action@v1.x
 
       - name: Update Author Information
-        run: echo ${{ env.GIT_COMMIT_AUTHOR_NAME }}, ${{ env.GIT_COMMIT_AUTHOR_EMAIL }} > AUTHOR
+        run: echo ${{ env.GIT_COMMIT_AUTHOR_NAME }}, ${{ env.GIT_COMMIT_AUTHOR_EMAIL }} > AUTHOR.txt
 
       - name: Create Pull Request
         id: autopr
@@ -45,3 +45,6 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           number: ${{ steps.autopr.outputs.pull-request-number }}
           method: merge
+
+      - name: Delete Files
+        run: rm AUTHOR.txt
