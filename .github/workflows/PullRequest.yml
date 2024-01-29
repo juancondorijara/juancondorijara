@@ -15,6 +15,9 @@ jobs:
       - name: Extract Git Commit Data
         uses: rlespinasse/git-commit-data-action@v1.x
 
+      - name: Delete Files
+        run: rm AUTHOR.txt
+
       - name: Update Author Information
         run: echo ${{ env.GIT_COMMIT_AUTHOR_NAME }} > AUTHOR.txt
 
