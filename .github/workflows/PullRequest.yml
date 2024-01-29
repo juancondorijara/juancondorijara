@@ -29,8 +29,7 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           delete-branch: false
 
-      - name: Pull Request Number
-        run: echo ${{ steps.autopr.outputs.pull-request-number }}
+      - run: echo ${{ steps.autopr.outputs.pull-request-number }}
 
       - name: Approve Pull Request
         uses: juliangruber/approve-pull-request-action@v1
