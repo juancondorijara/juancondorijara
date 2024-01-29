@@ -15,18 +15,15 @@ jobs:
       - name: Extract Git Commit Data
         uses: rlespinasse/git-commit-data-action@v1.x
 
-      - name: Delete Files
-        run: rm AUTHOR.txt
-
       - name: Update Author Information
-        run: echo ${{ env.GIT_COMMIT_AUTHOR_NAME }} > AUTHOR.txt
+        run: echo ${{ env.GIT_COMMIT_AUTHOR_NAME }}
 
       - name: Create Pull Request
         id: autopr
         uses: peter-evans/create-pull-request@v3
         with:
-          branch: develop
-          base: feature/test1
+          branch: feature/test1
+          base: develop
           title: "Pull Request With GitHub Actions"
           committer: ${{ env.GIT_COMMIT_AUTHOR_NAME }} <${{ env.GIT_COMMIT_AUTHOR_EMAIL }}">
           author: ${{ env.GIT_COMMIT_AUTHOR_NAME }} <${{ env.GIT_COMMIT_AUTHOR_EMAIL }}">
