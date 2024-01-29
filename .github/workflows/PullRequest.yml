@@ -28,7 +28,6 @@ jobs:
             Automatic Creation Of Pull Request
           github-token: ${{ secrets.GITHUB_TOKEN }}
           delete-branch: false
-
       - run: echo ${{ steps.autopr.outputs.pull-request-number }}
 
       - name: Approve Pull Request
