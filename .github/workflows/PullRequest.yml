@@ -16,7 +16,7 @@ jobs:
         uses: rlespinasse/git-commit-data-action@v1.x
 
       - name: Update Author Information
-        run: echo ${{ env.GIT_COMMIT_AUTHOR_NAME }}, ${{ env.GIT_COMMIT_AUTHOR_EMAIL }} > AUTHOR.txt
+        run: echo ${{ env.GIT_COMMIT_AUTHOR_NAME }}, ${{ env.GIT_COMMIT_AUTHOR_EMAIL }}
 
       - name: Create Pull Request
         id: autopr
