@@ -3,7 +3,7 @@ name: PR + GitHub Actions
 on:
   push:
     branches:
-      - feature/test1
+      - feature/test
 
 jobs:
   pullRequest:
