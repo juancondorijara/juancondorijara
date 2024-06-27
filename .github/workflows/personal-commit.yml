@@ -2,8 +2,8 @@ name: Personal Commit
 
 on:
   schedule:
-    # Ejecutar todos los días a las 1:30 PM hora Perú (UTC-5)
-    - cron: '15 18 * * *'  # 1:30 PM en Perú es 6:30 PM UTC
+    # Ejecutar todos los días a las 8:00 AM hora Perú (UTC-5)
+    - cron: '0 13 * * *'  # 8:00 AM en Perú es 1:00 PM UTC
 
 jobs:
   commit:
@@ -13,15 +13,21 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      - name: Set up Git
+        env:
+          GIT_USER_NAME: ${{ secrets.GIT_USER_NAME }}
+          GIT_USER_EMAIL: ${{ secrets.GIT_USER_EMAIL }}
+        run: |
+          git config --global user.name "${GIT_USER_NAME}"
+          git config --global user.email "${GIT_USER_EMAIL}"
+
       - name: Make changes
         run: |
-          echo "Commit diario" >> daily_commit.txt
+          echo "Mi Commit diario" >> daily_commit.txt
           git add daily_commit.txt
 
       - name: Commit changes
         run: |
-          git config --global user.name 'juancondorijara'
-          git config --global user.email 'juan.condori.jara@vallegrande.edu.pe'
           git commit -m "Commit diario"
 
       - name: Push changes
