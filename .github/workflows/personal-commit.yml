@@ -3,7 +3,7 @@ name: Personal Commit
 on:
   schedule:
     # Ejecutar todos los días a las 1:30 PM hora Perú (UTC-5)
-    - cron: '0 18 * * *'  # 1:30 PM en Perú es 6:30 PM UTC
+    - cron: '15 18 * * *'  # 1:30 PM en Perú es 6:30 PM UTC
 
 jobs:
   commit:
