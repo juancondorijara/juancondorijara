@@ -1,0 +1,31 @@
+name: Personal Commit
+
+on:
+  schedule:
+    # Ejecutar todos los días a las 1:30 PM hora Perú (UTC-5)
+    - cron: '0 18 * * *'  # 1:30 PM en Perú es 6:30 PM UTC
+
+jobs:
+  commit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Make changes
+        run: |
+          echo "Commit diario" >> daily_commit.txt
+          git add daily_commit.txt
+
+      - name: Commit changes
+        run: |
+          git config --global user.name 'juancondorijara'
+          git config --global user.email 'juan.condori.jara@vallegrande.edu.pe'
+          git commit -m "Commit diario"
+
+      - name: Push changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git push origin HEAD:main
