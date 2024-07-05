@@ -2,8 +2,8 @@ name: Personal Commit
 
 on:
   schedule:
-    # Ejecutar todos los días a las 8:00 AM hora Perú (UTC-5)
-    - cron: '0 13 * * *'  # 8:00 AM en Perú es 1:00 PM UTC
+    # Ejecutar todos los días a las 8:00 AM hora Perú (UTC-5)  //0 13
+    - cron: '5 0 * * *'  # 8:00 AM en Perú es 1:00 PM UTC
 
 jobs:
   commit:
@@ -21,14 +21,13 @@ jobs:
           git config --global user.name "${GIT_USER_NAME}"
           git config --global user.email "${GIT_USER_EMAIL}"
 
-      - name: Make changes
+      - name: Make changes and commit
         run: |
-          echo "Mi Commit diario" >> daily_commit.txt
-          git add daily_commit.txt
-
-      - name: Commit changes
-        run: |
-          git commit -m "Commit diario"
+          for i in 1 2; do
+            echo "Mi Commit diario $i" >> daily_commit_$i.txt
+            git add daily_commit_$i.txt
+            git commit -m "Commit diario $i"
+          done
 
       - name: Push changes
         env:
