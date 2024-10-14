@@ -1,14 +1,12 @@
+# .github/workflows/juancondorijara.yml
+# https://github.com/juancondorijara/juancondorijara/settings/secrets
+
 name: Personal Commit
 
-#on:
-#  schedule:
-#    # Ejecutar todos los días a las 8:00 AM hora Perú (UTC-5)  //0 13
-#    - cron: '0 13 * * *'  # 8:00 AM en Perú es 1:00 PM UTC
-
 on:
-  push:
-    branches:
-      - main
+  schedule:
+    # Ejecutar todos los días a las 8:00 AM hora Perú (UTC-5)  //0 13
+    - cron: '0 13 * * *'  # 8:00 AM en Perú es 1:00 PM UTC
 
 jobs:
   commit:
