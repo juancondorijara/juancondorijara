@@ -96,8 +96,6 @@ Hola soy Juan Condori, un apasionado por la **Tecnología** y la **Programación
 ## Estadísticas de GitHub 📊📈📊
 <img src="https://github-readme-stats.vercel.app/api?username=juancondorijara&show_icons=true&locale=es&role=OWNER,COLLABORATOR&theme=default" alt="juancondorijara" style="width: 500px;"/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=juancondorijara&hide_border=false" alt="juancondorijara" style="width: 500px;"/>
-
 </br>
 
 ## Redes Sociales 🔎📧💬📫🔍
