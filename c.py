@@ -1,5 +1,5 @@
+# pip install oracledb
 # python c.py
-# docker exec -it oracle-docker sqlplus system/ora1234@localhost:1521/XEPDB1
 import oracledb  
 
 # Conectar a Oracle XE en localhost
