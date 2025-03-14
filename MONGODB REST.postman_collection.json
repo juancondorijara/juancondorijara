@@ -1,0 +1,174 @@
+{
+	"info": {
+		"_postman_id": "1f2d41fa-8119-4dc8-9311-956bee72396f",
+		"name": "MONGODB REST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14821201"
+	},
+	"item": [
+		{
+			"name": "CUSTOMER",
+			"item": [
+				{
+					"name": "LISTAR",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://obscure-space-acorn-6w64wj4vj4w34gj7-8085.app.github.dev/v1/api/customer",
+							"protocol": "https",
+							"host": [
+								"obscure-space-acorn-6w64wj4vj4w34gj7-8085",
+								"app",
+								"github",
+								"dev"
+							],
+							"path": [
+								"v1",
+								"api",
+								"customer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREAR",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"dni\": \"87654321\",\r\n  \"firstName\": \"Oscar\",\r\n  \"lastName\": \"Ochoa\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://obscure-space-acorn-6w64wj4vj4w34gj7-8085.app.github.dev/v1/api/customer/save",
+							"protocol": "https",
+							"host": [
+								"obscure-space-acorn-6w64wj4vj4w34gj7-8085",
+								"app",
+								"github",
+								"dev"
+							],
+							"path": [
+								"v1",
+								"api",
+								"customer",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EDITAR",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": \"67cb056d74b8824633ccc7f2\",\r\n  \"dni\": \"87654321\",\r\n  \"firstName\": \"Oscar Nicamor\",\r\n  \"lastName\": \"Ochoa Ramos\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://obscure-space-acorn-6w64wj4vj4w34gj7-8085.app.github.dev/v1/api/customer/update",
+							"protocol": "https",
+							"host": [
+								"obscure-space-acorn-6w64wj4vj4w34gj7-8085",
+								"app",
+								"github",
+								"dev"
+							],
+							"path": [
+								"v1",
+								"api",
+								"customer",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ELIMINAR",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": \"67caf03d9ffd3c00bb629252\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://animated-space-guacamole-rvj4jj4v462pvjx-8085.app.github.dev/v1/api/customer/delete/67caf03d9ffd3c00bb629252",
+							"protocol": "https",
+							"host": [
+								"animated-space-guacamole-rvj4jj4v462pvjx-8085",
+								"app",
+								"github",
+								"dev"
+							],
+							"path": [
+								"v1",
+								"api",
+								"customer",
+								"delete",
+								"67caf03d9ffd3c00bb629252"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
