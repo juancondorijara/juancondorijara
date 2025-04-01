@@ -1,22 +1,3 @@
-# APIs NAME
-
-## Paso N° 1
-Descripción
-![](https://definicion.com/wp-content/uploads/2022/09/imagen.jpg)
-
-## Paso N° 2
-Descripción
-
-# APIs NAME
-
-## Paso N° 1
-Descripción
-
-## Paso N° 2
-Descripción
-
-
-
 ## Bienvenido a mi GitHub <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px" height="30px">
 
 <div align="center">
