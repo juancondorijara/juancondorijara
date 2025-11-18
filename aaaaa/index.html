@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página HTML con CSS Externo</title>
 
     <!-- Vincular archivo CSS externo -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="juan.css">
+
 </head>
 
 <body>
@@ -17,16 +19,36 @@
 
     <nav>
         <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#">Acerca</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#1">SECCIÓN 1</a></li>
+            <li><a href="#2">SECCIÓN 2</a></li>
+            <li><a href="#3">SECCIÓN 3</a></li>
         </ul>
     </nav>
 
     <main>
-        <section id="inicio">
-            <h2>Sección de ejemplo</h2>
-            <p>Este es un texto de ejemplo dentro de una sección principal.</p>
+        <section id="1">
+            <h2>1 - SECCIÓN UNO</h2>
+            <p>Imágen</p>
+            <!-- Imagen agregada -->
+            <img src="https://imagenes.elpais.com/resizer/v2/NZJCPWHXINAOZNBVOWNVKJO5ZU.jpg?auth=c762895721540964c8025922fdeae9c74bfae633361228ec5aa2158e4de7865e&width=1200"
+                alt="Descripción de la imagen" height="180" width="300">
+        </section>
+
+        <section id="2">
+            <h2>2 - SECCIÓN DOS</h2>
+            <p>GIF</p>
+            <!-- O insertar un GIF desde internet -->
+            <img src="https://pqs.pe/wp-content/uploads/2016/03/tumblr_m984tzdeg51rplctno1_500.gif" alt="GIF desde web"
+                height="180" width="300">
+        </section>
+
+        <section id="3">
+            <h2>3 - SECCIÓN TRES</h2>
+            <p>Video</p>
+            <!-- Inserción de video de YouTube -->
+            <a href="https://www.youtube.com/watch?v=uNYWKlc3mmU" target="_blank">
+                Ver video en YouTube
+            </a>
         </section>
 
         <article>
@@ -45,4 +67,5 @@
     </footer>
 
 </body>
+
 </html>
