@@ -1,72 +1,301 @@
-/* Estilos generales */
+:root {
+    --bg: #f5f7fb;
+    --card: #ffffff;
+    --muted: #6b7280;
+    --primary: #0f766e;
+    --accent: #06b6d4;
+    --sidebar: #0b2230;
+    --glass: rgba(255, 255, 255, 0.6);
+    --shadow: 0 8px 20px rgba(12, 20, 30, 0.08);
+    --radius: 12px;
+    --gap: 16px;
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+* {
+    box-sizing: border-box
+}
+
+html,
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f0f0f0;
-    color: #333;
+    height: 100%
 }
 
-/* Encabezado */
+body {
+    margin: 0;
+    background: linear-gradient(180deg, var(--bg), #eef3f6);
+    color: #0f172a;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+    line-height: 1.45;
+}
+
+/* Layout */
+.app {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    grid-template-rows: 64px 1fr 56px;
+    grid-template-areas:
+        "sidebar header"
+        "sidebar main"
+        "sidebar footer";
+    gap: var(--gap);
+    padding: 24px;
+}
+
 header {
-    background: #4a90e2;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-/* Navegación */
-nav {
-    background: #333;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    grid-area: header;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px 18px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.4));
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(6px);
 }
 
-nav ul li {
+/* Sidebar */
+aside {
+    grid-area: sidebar;
+    background: linear-gradient(180deg, var(--sidebar), #07202a);
+    color: #dbeafe;
+    padding: 18px 14px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(2, 8, 23, 0.35);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+}
+
+.brand .logo {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, var(--accent), var(--primary));
+    display: inline-grid;
+    place-items: center;
+    color: white;
+    font-weight: 800;
+    font-size: 18px;
+    box-shadow: 0 4px 12px rgba(6, 20, 23, 0.35);
+}
+
+nav.side-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 8px
+}
+
+nav.side-nav a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 600;
+    font-size: 14px;
+    opacity: 0.95
+}
+
+nav.side-nav a:hover {
+    background: rgba(255, 255, 255, 0.03)
+}
+
+nav.side-nav a.active {
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03)
+}
+
+.profile {
+    margin-top: auto;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-top: 6px;
+    border-top: 1px solid rgba(255, 255, 255, 0.04)
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    background: linear-gradient(180deg, #fef3c7, #fde68a);
+    display: grid;
+    place-items: center;
+    font-weight: 700
+}
+
+/* Main */
+main {
+    grid-area: main;
+    padding: 18px;
+    border-radius: 12px;
+    background: var(--card);
+    box-shadow: var(--shadow);
+}
+
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 18px
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 12px;
+    border-radius: 10px;
+    background: #f3f6f8;
+    border: 1px solid #e6eef6;
+    width: 100%;
+    max-width: 540px
+}
+
+.search input {
+    border: 0;
+    background: transparent;
+    outline: none;
+    font-size: 14px
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 18px
+}
+
+.card {
+    padding: 16px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, var(--card), #fbfcff);
+    box-shadow: 0 6px 18px rgba(9, 30, 40, 0.04)
+}
+
+.card h3 {
+    margin: 0 0 4px 0;
+    font-size: 14px
+}
+
+.card p {
     margin: 0;
+    font-size: 18px;
+    font-weight: 700
 }
 
-nav ul li a {
-    display: block;
-    padding: 15px 20px;
+.content-area {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 12px
+}
+
+.panel {
+    background: var(--card);
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: var(--shadow)
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse
+}
+
+thead th {
+    text-align: left;
+    padding: 10px 8px;
+    font-size: 13px;
+    color: var(--muted)
+}
+
+tbody td {
+    padding: 10px 8px;
+    border-top: 1px solid #eef2f7
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 18px;
+    border-radius: 12px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.4));
+    box-shadow: var(--shadow);
+}
+
+/* Responsive */
+@media (max-width:980px) {
+    .app {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+        padding: 16px
+    }
+
+    aside {
+        display: none
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .content-area {
+        grid-template-columns: 1fr
+    }
+}
+
+@media (max-width:520px) {
+    .cards {
+        grid-template-columns: 1fr
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px
+    }
+
+    .top-row {
+        flex-direction: column;
+        align-items: stretch
+    }
+}
+
+/* Small utility */
+.muted {
+    color: var(--muted);
+    font-size: 13px
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: var(--primary);
     color: white;
     text-decoration: none;
+    font-weight: 700
 }
 
-nav ul li a:hover {
-    background: #555;
-}
 
-/* Contenido principal */
-main {
-    padding: 20px;
-}
-
-section, article {
-    background: white;
-    margin-bottom: 20px;
-    padding: 15px;
-    border-radius: 5px;
-}
-
-/* Barra lateral */
-aside {
-    background: #fff;
-    padding: 15px;
-    margin: 20px;
-    border-left: 4px solid #4a90e2;
-}
-
-/* Pie de página */
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
-}
