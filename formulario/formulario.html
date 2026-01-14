@@ -2,96 +2,27 @@
 <html lang="es">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>FORMULARIO</title>
-
-    <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #f5faff;
-      padding: 20px;
-    }
-
-    .form-container {
-      max-width: 500px;
-      margin: 0 auto;
-      background: white;
-      border-radius: 16px;
-      padding: 30px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      border: 2px solid #0077C8;
-    }
-
-    h2 {
-      color: #0077C8;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    label {
-      display: block;
-      font-weight: bold;
-    }
-
-    input,
-    textarea,
-    select {
-      width: 100%;
-      padding: 12px;
-      margin-top: 10px;
-      margin-bottom: 20px;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      font-size: 16px;
-      box-sizing: border-box;
-      transition: border 0.3s;
-    }
-
-    input:focus,
-    textarea:focus {
-      border-color: #0077C8;
-      outline: none;
-    }
-
-    button {
-      margin-top: 20px;
-      background-color: #0077C8;
-      color: white;
-      border: none;
-      padding: 12px;
-      width: 100%;
-      font-size: 16px;
-      font-weight: bold;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    button:hover {
-      background-color: #005f9e;
-    }
-
-    .mensaje {
-      margin-top: 20px;
-      text-align: center;
-      font-weight: bold;
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>FORMULARIO</title>
+  <link rel="stylesheet" href="formulario.css">
 </head>
 
 <body>
   <div class="form-container">
     <form id="formulario">
       <h2>FORMULARIO</h2>
+      <hr/>
+      <br/>
 
       <!-- ✅ CAMPO NOMBRE -->
-      <label for="nombre">NOMBRE:</label>
-      <input type="text" name="nombre" id="nombre" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]+" title="Solo se permiten letras y espacios" required />
+      <label>NOMBRE:</label>
+      <input type="text" name="nombre" id="nombre" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]+"
+        title="Solo se permiten letras y espacios" />
 
       <!-- ✅ CAMPO CATEGORÍA -->
-      <label for="categoria">CATEGORÍA:</label>
-      <select name="categoria" id="categoria" required>
+      <label>CATEGORÍA:</label>
+      <select name="categoria" id="categoria">
         <option value="" disabled selected>-- Selecciona una categoría --</option>
         <option value="Abarrotes">Abarrotes</option>
         <option value="Lácteos">Lácteos</option>
@@ -100,25 +31,24 @@
       </select>
 
       <!-- ✅ CAMPO PRECIO DE VENTA -->
-      <label for="precioVenta">PRECIO DE VENTA:</label>
-      <input type="number" name="precioVenta" id="precioVenta" required step="0.01" placeholder="Ej: 10.99" />
+      <label>PRECIO DE VENTA:</label>
+      <input type="number" name="precioVenta" id="precioVenta" step="0.01" placeholder="Ej: 10.99" />
 
       <!-- ✅ CAMPO STOCK (CANTIDAD) -->
-      <label for="stock">STOCK:</label>
-      <input type="number" name="stock" id="stock" rows="4" required step="1" placeholder="Ej: 10" />
+      <label>STOCK:</label>
+      <input type="number" name="stock" id="stock" rows="4" step="1" placeholder="Ej: 10" />
 
       <!-- ✅ CAMPO FECHA DE VENCIMIENTO -->
-      <label for="fechaVencimiento">FECHA DE VENCIMIENTO:</label>
-      <input type="datetime-local" name="fechaVencimiento" id="fechaVencimiento" required />
+      <label>FECHA DE VENCIMIENTO:</label>
+      <input type="datetime-local" name="fechaVencimiento" id="fechaVencimiento" />
 
       <!-- ✅ CAMPO SOLO FECHA -->
-      <label for="fecha">SOLO FECHA:</label>
-      <input type="date" name="fecha" id="fecha" required />
-      
+      <label>SOLO FECHA:</label>
+      <input type="date" name="fecha" id="fecha" />
 
       <!-- ✅ CAMPO SOLO HORA -->
-      <label for="hora">SOLO HORA (formato HH:mm):</label>
-      <input type="time" name="hora" id="hora" required />
+      <label>SOLO HORA (formato HH:mm):</label>
+      <input type="time" name="hora" id="hora" />
 
       <button type="submit">ENVIAR</button>
     </form>
