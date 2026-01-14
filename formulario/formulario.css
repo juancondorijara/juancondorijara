@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 20px;
+    background-color: rgb(62, 172, 236);
+    background-image: url("https://thumbs.dreamstime.com/b/html-y-fondo-azul-del-texto-concepto-abstracto-css-96280512.jp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 2px solid #0077C8;
+}
+
+h2 {
+    color: #0077C8;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+/* Campo válido */
+input:valid {
+    border-color: green;
+    background-color: #e6ffe6;
+}
+
+/* Campo inválido */
+input:invalid {
+    border-color: red;
+    background-color: #ffe6e6;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: black;
+    outline: none;
+}
+
+button {
+    margin-top: 20px;
+    background-color: #0077C8;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.mensaje {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
