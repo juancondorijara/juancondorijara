@@ -1,0 +1,80 @@
+name: SQL Server Script Validation
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  validate-sql:
+    runs-on: ubuntu-latest
+
+    services:
+      sqlserver:
+        image: mcr.microsoft.com/mssql/server:2022-latest
+        env:
+          ACCEPT_EULA: Y
+          SA_PASSWORD: Password123!
+        ports:
+          - 1433:1433
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install SQLCMD
+        run: |
+          curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+          curl https://packages.microsoft.com/config/ubuntu/22.04/prod.list | sudo tee /etc/apt/sources.list.d/msprod.list
+
+          sudo apt-get update
+          sudo ACCEPT_EULA=Y apt-get install -y mssql-tools18 unixodbc-dev
+
+          echo "/opt/mssql-tools18/bin" >> $GITHUB_PATH
+
+      - name: Wait SQL Server
+        run: |
+          for i in {1..30}
+          do
+            /opt/mssql-tools18/bin/sqlcmd \
+              -S localhost \
+              -U sa \
+              -P 'Password123!' \
+              -C \
+              -Q "SELECT 1" && break
+
+            echo "Waiting SQL Server..."
+            sleep 10
+          done
+
+      - name: Execute SQL Script
+        run: |
+          /opt/mssql-tools18/bin/sqlcmd \
+            -S localhost \
+            -U sa \
+            -P 'Password123!' \
+            -C \
+            -b \
+            -i database/script.sql
+
+      - name: Validate Tables
+        run: |
+          /opt/mssql-tools18/bin/sqlcmd \
+            -S localhost \
+            -U sa \
+            -P 'Password123!' \
+            -C \
+            -d TestDB \
+            -Q "
+              IF NOT EXISTS (
+                SELECT *
+                FROM sys.tables
+                WHERE name='customer'
+              )
+              THROW 50000,'Table customer not found',1;
+            "
