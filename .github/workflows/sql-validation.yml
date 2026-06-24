@@ -222,28 +222,152 @@ jobs:
           echo "FKS=$FKS" >> $GITHUB_ENV
           echo "ROWS=$ROWS" >> $GITHUB_ENV
 
-      - name: Generate Summary
+            - name: Collect Tables And Rows
         if: always()
         run: |
-          echo "# Resultado de la revisión automática" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
 
-          echo "| Validación | Resultado |" >> $GITHUB_STEP_SUMMARY
-          echo "|------------|------------|" >> $GITHUB_STEP_SUMMARY
-          echo "| Ejecución Script | $SCRIPT_STATUS |" >> $GITHUB_STEP_SUMMARY
-          echo "| Base Detectada | $DB_NAME |" >> $GITHUB_STEP_SUMMARY
-          echo "| Tablas | $TABLES |" >> $GITHUB_STEP_SUMMARY
-          echo "| Primary Keys | $PKS |" >> $GITHUB_STEP_SUMMARY
-          echo "| Foreign Keys | $FKS |" >> $GITHUB_STEP_SUMMARY
-          echo "| Registros | $ROWS |" >> $GITHUB_STEP_SUMMARY
-
-          echo "" >> $GITHUB_STEP_SUMMARY
-
-          if [ "$SCRIPT_STATUS" = "SUCCESS" ]; then
-            echo "## ✅ SCRIPT FUNCIONAL" >> $GITHUB_STEP_SUMMARY
-          else
-            echo "## ❌ SCRIPT NO FUNCIONAL" >> $GITHUB_STEP_SUMMARY
+          if [ "$DB_NAME" = "NOT_FOUND" ]; then
+            touch table_rows.txt
+            exit 0
           fi
+
+          /opt/mssql-tools18/bin/sqlcmd \
+            -S "$SQL_SERVER" \
+            -U "$SQL_USER" \
+            -P "$SQL_PASSWORD" \
+            -C \
+            -d "$DB_NAME" \
+            -Q "
+              SET NOCOUNT ON;
+
+              SELECT
+                  t.name,
+                  SUM(ps.row_count)
+              FROM sys.tables t
+              INNER JOIN sys.dm_db_partition_stats ps
+                  ON t.object_id = ps.object_id
+              WHERE ps.index_id IN (0,1)
+              GROUP BY t.name
+              ORDER BY t.name
+            " \
+            -h -1 \
+            -W \
+            -s "|" > table_rows.txt
+
+            - name: Collect Tables And Rows
+        if: always()
+        run: |
+
+          if [ "$DB_NAME" = "NOT_FOUND" ]; then
+            touch table_rows.txt
+            exit 0
+          fi
+
+          /opt/mssql-tools18/bin/sqlcmd \
+            -S "$SQL_SERVER" \
+            -U "$SQL_USER" \
+            -P "$SQL_PASSWORD" \
+            -C \
+            -d "$DB_NAME" \
+            -Q "
+              SET NOCOUNT ON;
+
+              SELECT
+                  t.name,
+                  SUM(ps.row_count)
+              FROM sys.tables t
+              INNER JOIN sys.dm_db_partition_stats ps
+                  ON t.object_id = ps.object_id
+              WHERE ps.index_id IN (0,1)
+              GROUP BY t.name
+              ORDER BY t.name
+            " \
+            -h -1 \
+            -W \
+            -s "|" > table_rows.txt
+
+
+            - name: Collect Foreign Keys
+        if: always()
+        run: |
+
+          if [ "$DB_NAME" = "NOT_FOUND" ]; then
+            touch foreign_keys.txt
+            exit 0
+          fi
+
+          /opt/mssql-tools18/bin/sqlcmd \
+            -S "$SQL_SERVER" \
+            -U "$SQL_USER" \
+            -P "$SQL_PASSWORD" \
+            -C \
+            -d "$DB_NAME" \
+            -Q "
+              SET NOCOUNT ON;
+              SELECT name
+              FROM sys.foreign_keys
+              ORDER BY name
+            " \
+            -h -1 \
+            -W > foreign_keys.txt
+
+      # Por probar
+      - name: Collect Tables And Rows
+        if: always()
+        run: |
+
+          if [ "$DB_NAME" = "NOT_FOUND" ]; then
+            touch table_rows.txt
+            exit 0
+          fi
+
+          /opt/mssql-tools18/bin/sqlcmd \
+            -S "$SQL_SERVER" \
+            -U "$SQL_USER" \
+            -P "$SQL_PASSWORD" \
+            -C \
+            -d "$DB_NAME" \
+            -Q "
+              SET NOCOUNT ON;
+
+              SELECT
+                  t.name,
+                  SUM(ps.row_count)
+              FROM sys.tables t
+              INNER JOIN sys.dm_db_partition_stats ps
+                  ON t.object_id = ps.object_id
+              WHERE ps.index_id IN (0,1)
+              GROUP BY t.name
+              ORDER BY t.name
+            " \
+            -h -1 \
+            -W \
+            -s "|" > table_rows.txt
+
+      # Por probar
+      - name: Collect Foreign Keys
+        if: always()
+        run: |
+
+          if [ "$DB_NAME" = "NOT_FOUND" ]; then
+            touch foreign_keys.txt
+            exit 0
+          fi
+
+          /opt/mssql-tools18/bin/sqlcmd \
+            -S "$SQL_SERVER" \
+            -U "$SQL_USER" \
+            -P "$SQL_PASSWORD" \
+            -C \
+            -d "$DB_NAME" \
+            -Q "
+              SET NOCOUNT ON;
+              SELECT name
+              FROM sys.foreign_keys
+              ORDER BY name
+            " \
+            -h -1 \
+            -W > foreign_keys.txt
 
       - name: Fail Pipeline If Script Failed
         if: always()
@@ -254,4 +378,5 @@ jobs:
           fi
 
 
-          
+
+
