@@ -10,71 +10,245 @@ on:
     branches:
       - main
 
+  workflow_dispatch:
+
+env:
+  SQL_SCRIPT: database/script.sql
+  SQL_SERVER: localhost
+  SQL_USER: sa
+  SQL_PASSWORD: Password123!
+
 jobs:
-  validate-sql:
+  validate:
+
     runs-on: ubuntu-latest
 
     services:
       sqlserver:
         image: mcr.microsoft.com/mssql/server:2022-latest
+
         env:
           ACCEPT_EULA: Y
           SA_PASSWORD: Password123!
+
         ports:
           - 1433:1433
 
     steps:
-      - name: Checkout code
+
+      - name: Checkout Repository
         uses: actions/checkout@v4
+
+      - name: Validate Script Exists
+        run: |
+          if [ ! -f "$SQL_SCRIPT" ]; then
+            echo "ERROR: No se encontró el archivo $SQL_SCRIPT"
+            exit 1
+          fi
+
+          echo "Script encontrado: $SQL_SCRIPT"
 
       - name: Install SQLCMD
         run: |
           curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
-          curl https://packages.microsoft.com/config/ubuntu/22.04/prod.list | sudo tee /etc/apt/sources.list.d/msprod.list
+
+          curl https://packages.microsoft.com/config/ubuntu/22.04/prod.list \
+            | sudo tee /etc/apt/sources.list.d/msprod.list
 
           sudo apt-get update
-          sudo ACCEPT_EULA=Y apt-get install -y mssql-tools18 unixodbc-dev
 
-          echo "/opt/mssql-tools18/bin" >> $GITHUB_PATH
+          sudo ACCEPT_EULA=Y apt-get install -y \
+            mssql-tools18 \
+            unixodbc-dev
 
       - name: Wait SQL Server
         run: |
           for i in {1..30}
           do
             /opt/mssql-tools18/bin/sqlcmd \
-              -S localhost \
-              -U sa \
-              -P 'Password123!' \
+              -S "$SQL_SERVER" \
+              -U "$SQL_USER" \
+              -P "$SQL_PASSWORD" \
               -C \
-              -Q "SELECT 1" && break
+              -Q "SELECT 1" > /dev/null 2>&1
+
+            if [ $? -eq 0 ]; then
+              echo "SQL Server Ready"
+              exit 0
+            fi
 
             echo "Waiting SQL Server..."
-            sleep 10
+            sleep 5
           done
 
-      - name: Execute SQL Script
+          echo "SQL Server startup timeout"
+          exit 1
+
+      - name: Save Existing Databases
         run: |
           /opt/mssql-tools18/bin/sqlcmd \
-            -S localhost \
-            -U sa \
-            -P 'Password123!' \
+            -S "$SQL_SERVER" \
+            -U "$SQL_USER" \
+            -P "$SQL_PASSWORD" \
+            -C \
+            -Q "
+            SET NOCOUNT ON;
+            SELECT name
+            FROM sys.databases
+            " \
+            -h -1 \
+            -W > before.txt
+
+      - name: Execute Student Script
+        id: execute_script
+        continue-on-error: true
+        run: |
+          /opt/mssql-tools18/bin/sqlcmd \
+            -S "$SQL_SERVER" \
+            -U "$SQL_USER" \
+            -P "$SQL_PASSWORD" \
             -C \
             -b \
-            -i database/script.sql
+            -i "$SQL_SCRIPT"
 
-      - name: Validate Tables
+      - name: Detect Script Status
+        if: always()
+        run: |
+          if [ "${{ steps.execute_script.outcome }}" = "success" ]; then
+            echo "SCRIPT_STATUS=SUCCESS" >> $GITHUB_ENV
+          else
+            echo "SCRIPT_STATUS=FAILED" >> $GITHUB_ENV
+          fi
+
+      - name: Save Databases After Execution
+        if: always()
         run: |
           /opt/mssql-tools18/bin/sqlcmd \
-            -S localhost \
-            -U sa \
-            -P 'Password123!' \
+            -S "$SQL_SERVER" \
+            -U "$SQL_USER" \
+            -P "$SQL_PASSWORD" \
             -C \
-            -d TestDB \
             -Q "
-              IF NOT EXISTS (
-                SELECT *
-                FROM sys.tables
-                WHERE name='customer'
-              )
-              THROW 50000,'Table customer not found',1;
-            "
+            SET NOCOUNT ON;
+            SELECT name
+            FROM sys.databases
+            " \
+            -h -1 \
+            -W > after.txt
+
+      - name: Detect Created Database
+        if: always()
+        shell: bash
+        run: |
+          DB_NAME=$(comm -13 \
+            <(sort before.txt) \
+            <(sort after.txt) \
+            | head -n 1)
+
+          if [ -z "$DB_NAME" ]; then
+            DB_NAME="NOT_FOUND"
+          fi
+
+          echo "DB_NAME=$DB_NAME" >> $GITHUB_ENV
+
+          echo "Database detected: $DB_NAME"
+
+      - name: Collect Metrics
+        if: always()
+        run: |
+          if [ "$DB_NAME" = "NOT_FOUND" ]; then
+            echo "TABLES=0" >> $GITHUB_ENV
+            echo "PKS=0" >> $GITHUB_ENV
+            echo "FKS=0" >> $GITHUB_ENV
+            echo "ROWS=0" >> $GITHUB_ENV
+            exit 0
+          fi
+
+          TABLES=$(
+          /opt/mssql-tools18/bin/sqlcmd \
+            -S "$SQL_SERVER" \
+            -U "$SQL_USER" \
+            -P "$SQL_PASSWORD" \
+            -C \
+            -d "$DB_NAME" \
+            -Q "SET NOCOUNT ON; SELECT COUNT(*) FROM sys.tables" \
+            -h -1 \
+            -W | tr -d '[:space:]'
+          )
+
+          PKS=$(
+          /opt/mssql-tools18/bin/sqlcmd \
+            -S "$SQL_SERVER" \
+            -U "$SQL_USER" \
+            -P "$SQL_PASSWORD" \
+            -C \
+            -d "$DB_NAME" \
+            -Q "SET NOCOUNT ON; SELECT COUNT(*) FROM sys.key_constraints WHERE type='PK'" \
+            -h -1 \
+            -W | tr -d '[:space:]'
+          )
+
+          FKS=$(
+          /opt/mssql-tools18/bin/sqlcmd \
+            -S "$SQL_SERVER" \
+            -U "$SQL_USER" \
+            -P "$SQL_PASSWORD" \
+            -C \
+            -d "$DB_NAME" \
+            -Q "SET NOCOUNT ON; SELECT COUNT(*) FROM sys.foreign_keys" \
+            -h -1 \
+            -W | tr -d '[:space:]'
+          )
+
+          ROWS=$(
+          /opt/mssql-tools18/bin/sqlcmd \
+            -S "$SQL_SERVER" \
+            -U "$SQL_USER" \
+            -P "$SQL_PASSWORD" \
+            -C \
+            -d "$DB_NAME" \
+            -Q "
+            SET NOCOUNT ON;
+            SELECT ISNULL(SUM(row_count),0)
+            FROM sys.dm_db_partition_stats
+            WHERE index_id IN (0,1)
+            " \
+            -h -1 \
+            -W | tr -d '[:space:]'
+          )
+
+          echo "TABLES=$TABLES" >> $GITHUB_ENV
+          echo "PKS=$PKS" >> $GITHUB_ENV
+          echo "FKS=$FKS" >> $GITHUB_ENV
+          echo "ROWS=$ROWS" >> $GITHUB_ENV
+
+      - name: Generate Summary
+        if: always()
+        run: |
+          echo "# Resultado de la revisión automática" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          echo "| Validación | Resultado |" >> $GITHUB_STEP_SUMMARY
+          echo "|------------|------------|" >> $GITHUB_STEP_SUMMARY
+          echo "| Ejecución Script | $SCRIPT_STATUS |" >> $GITHUB_STEP_SUMMARY
+          echo "| Base Detectada | $DB_NAME |" >> $GITHUB_STEP_SUMMARY
+          echo "| Tablas | $TABLES |" >> $GITHUB_STEP_SUMMARY
+          echo "| Primary Keys | $PKS |" >> $GITHUB_STEP_SUMMARY
+          echo "| Foreign Keys | $FKS |" >> $GITHUB_STEP_SUMMARY
+          echo "| Registros | $ROWS |" >> $GITHUB_STEP_SUMMARY
+
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          if [ "$SCRIPT_STATUS" = "SUCCESS" ]; then
+            echo "## ✅ SCRIPT FUNCIONAL" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "## ❌ SCRIPT NO FUNCIONAL" >> $GITHUB_STEP_SUMMARY
+          fi
+
+      - name: Fail Pipeline If Script Failed
+        if: always()
+        run: |
+          if [ "$SCRIPT_STATUS" != "SUCCESS" ]; then
+            echo "SQL script execution failed."
+            exit 1
+          fi
